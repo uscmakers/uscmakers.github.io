@@ -21,6 +21,16 @@
 	</script>
   	<style>
 
+  	@font-face {
+  		font-family: "MyriadPro-Regular";
+  		src: url(font/MyriadPro-Regular.otf) format("opentype");
+  	}
+
+  	@font-face {
+  		font-family: "Futura-Condensed-Medium";
+  		src: url(font/Futura-Condensed-Medium.ttf) format("truetype");
+  	}
+
   		body {
   			background-color: white;
   			font-size: 16px;
@@ -35,8 +45,16 @@
   		}
 
   		#logo {
-  			height: 60px;
-  			margin-top: -17px;
+  			height: 48px;
+  			margin-top: -10px;
+  		}
+
+  		#content {
+  			font-family: MyriadPro-Regular;
+  		}
+
+  		.navbar-inverse {
+  			font-family: Futura-Condensed-Medium;
   		}
 
 .navbar-inverse{
@@ -45,7 +63,7 @@
 
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #910b3a;
+  color: white;
   background-color: transparent;
 }
 
@@ -98,28 +116,39 @@
   left: 0;
   width: 15%;
   font-size: 20px;
-  color: #fff;
+  color: white;
   text-align: center;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, .6);
-  background-color: rgba(0, 0, 0, 0);
-  filter: alpha(opacity=40);
+  text-shadow: 0 0px 0px rgba(0, 0, 0, .4);
+  color: purple;
+  filter: alpha(opacity=.4);
   opacity: .4;
+}
+
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+	color: gray;
 }
 
 .carousel-control:hover,
 .carousel-control:focus {
   color: #fff;
   text-decoration: none;
-  filter: alpha(opacity=90);
+  filter: alpha(opacity=.9);
   outline: 0;
   opacity: .9;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
 }
 
 .carousel-inner {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border: 2px ridge #d3d3d3;
 }
 
 .carousel-inner .item img{
@@ -152,14 +181,17 @@
 }
 
 .col-md-4 {
-	padding: 10px;
-	height: 100%;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.col-md-4 img {
+	width: 75%;
 }
 
 .row {
-	margin-left: 2%;
-	margin-right: 2%;
-	margin-top: 2%;
+
 }
 
 blockquote {
@@ -189,7 +221,7 @@ blockquote {
 	width: 100%;
 }
 
-.eBoard .portrait {
+.portrait {
   position: relative;
   width: 200px;
   height: 200px;
@@ -197,35 +229,28 @@ blockquote {
   margin: auto;
   border-radius: 200px;
 }
-.eBoard .portrait img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: auto;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}
 
-.person .portrait {
+.col-md-3 .portrait {
   position: relative;
-  width: 60%;
-  height: 160px;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
+  margin: auto;
+  border-radius: 250px;
 }
-.person .portrait img {
+
+
+.portrait img {
   position: absolute;
   left: 50%;
   top: 50%;
   height: 100%;
   width: auto;
-  object-fit: cover;
   -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
-
 }
+
 
 h1{
 	text-align: center;
@@ -273,6 +298,11 @@ hr {
 	}
 }
 
+.modal-body {
+	height: 280px;
+	text-align: center;
+}
+
 	</style>
 </head>
 
@@ -286,15 +316,15 @@ hr {
 
 	      <span class="	glyphicon glyphicon-menu-hamburger" style="color: white;"></span>
 	      </button>
-	      <a class="navbar-brand" data-toggle="tab" href="#home"><img name="Logo" id="logo" src="logo_white.png"></a>
+	      <a class="navbar-brand" data-toggle="tab" href="#home"><img name="Logo" id="logo" src="img/logo_white.png"></a>
 	    </div>
 
 	   
 	    <div class="collapse navbar-collapse" id="myNavbar">
 		    <ul class="nav navbar-nav">
-		      <li class="active"><a data-toggle="tab" href="#home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-		      <li><a data-toggle="tab" href="#projects"><span class="glyphicon  glyphicon-list-alt"></span> Projects</a></li>
-		      <li><a data-toggle="tab" href="#members"><span class="glyphicon glyphicon-user"></span> Members</a></li> 
+		      <li class="active"><a data-toggle="tab" href="#home"><span class="glyphicon glyphicon-home"></span>  HOME</a></li>
+		      <li><a data-toggle="tab" href="#about"><span class="glyphicon  glyphicon-list-alt"></span>  ABOUT</a></li>
+		      <li><a data-toggle="tab" href="#eboard"><span class="glyphicon glyphicon-user"></span>  E-BOARD</a></li> 
 		      <!--<li><a data-toggle="tab" href="#"><span class="glyphicon  glyphicon-calendar"></span> Events</a></li> -->
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">
@@ -305,7 +335,7 @@ hr {
 	</nav>
 
 
-	<div class="tab-content container" id="content">
+	<div class="tab-content" id="content">
 		<div id="home" class="tab-pane fade in active">
 		  <br>
 		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -346,140 +376,86 @@ hr {
 		      <span class="sr-only">Next</span>
 		    </a>
 		  </div>
-	  		<div class="container">
-				<img class="center-block" src="thumbnail.png" alt="tempLogo" title="tempLogo" style="width: 20%; height:auto; margin-top: 25px;"/>
-			</div>
-				
+		  <div class="container">
+
+		</div>
+		</div>
+
+		<div id="about" class="container tab-pane fade">
 			<div id="description" title="temp text">
 				<p>
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 				</p>
 			</div>
-		</div>
+			<br>
 
-		<div id="projects" class="tab-pane fade">
-			<div class="row">
-				<div class="col-md-4 project">
-					<div class="wrapper center-block"><img class="img-responsive" src="potato1.jpg"></div>
-					<blockquote>Project description will go right here. Here is a potato of a project.<footer>Jeffrey Chen</footer></blockquote>
-				</div>
-				<div class="col-md-4 project">
-					<div class="wrapper center-block"><img class="img-responsive" src="potato2.jpg"></div>
-					<blockquote>Project description will go right here. Here is potato number 2<footer>Jeffrey Chen</footer></blockquote>
-				</div>
-				<div class="col-md-4 project">
-					<div class="wrapper center-block"><img class="img-responsive" src="potato3.jpg"></div>
-					<blockquote>You know the drill already, it's potato number 3.<footer>Jeffrey Chen</footer></blockquote>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 project">
-					<div class="wrapper center-block"><img class="img-responsive" src="potato1.jpg"></div>
-					<blockquote>Project description will go right here. Here is a longer description of the project.<footer>Jeffrey Chen</footer></blockquote>
-				</div>
-				<div class="col-md-4 project">
-					<div class="wrapper center-block"><img class="img-responsive" src="potato2.jpg"></div>
-					<blockquote>Project description will go right here. Here is potato number 2<footer>Jeffrey Chen</footer></blockquote>
-				</div>
-				<div class="col-md-4 project">
-					<div class="wrapper center-block"><img class="img-responsive" src="potato3.jpg"></div>
-					<blockquote>You know the drill already, it's potato number 3.<footer>Jeffrey Chen</footer></blockquote>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 project">
-					<div class="wrapper center-block"><img class="img-responsive" src="potato1.jpg"></div>
-					<blockquote>Project description will go right here. Here is a longer description of the project.<footer>Jeffrey Chen</footer></blockquote>
-				</div>
-				<div class="col-md-4 project">
-					<div class="wrapper center-block"><img class="img-responsive" src="potato2.jpg"></div>
-					<blockquote>Project description will go right here. Here is potato number 2<footer>Jeffrey Chen</footer></blockquote>
-				</div>
-				<div class="col-md-4 project">
-					<div class="wrapper center-block"><img class="img-responsive" src="potato3.jpg"></div>
-					<blockquote>You know the drill already, it's potato number 3.<footer>Jeffrey Chen</footer></blockquote>
-				</div>
-			</div>
-		</div>
+			<hr>
 
-		<div id="members" class="tab-pane fade">
-			<div class="container eBoard">
-				<h1>Title</h1>
-				<div class="portrait">
-					<img id="img-circle" src="sample.jpg"/>
-				</div>
-				<h2>Jeffrey Chen</h2>
-				<div class="container bio" title="filler text">
-					Jeffrey Chen is not a potato.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-				</div>
-				<hr>
-
-			</div>
-
-			<div class="container eBoard">
-				<h1>Title 2</h1>
-				<div class="portrait">
-					<img id="img-circle" src="sample2.jpg"/>
-				</div>
-				<h2>Headphoneless Jeffrey Chen</h2>
-				<div class="container bio" title="filler text">
-					Now he is.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-				</div>
-				<hr>
-			</div>
-
-			<div class="table-responsive" id="generalMembers">
-				<table class="table table-hover" style="min-width:100%;" align="right">
-					<thead>
-						<tr>
-							<th>Picture</th>
-							<th>Name</th>
-							<th>Major</th>
-							<th>Email</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="person">
-							<td><div class="portrait"><img class="img-responsive" src="sample.jpg"></div></td>
-							<td>Jeff</td>
-							<td>CECS</td>
-							<td>abc@gmail.com</td>
-						</tr>
-						<tr class="person">
-							<td><div class="portrait"><img class="img-responsive" src="sample2.jpg"></div></td>
-							<td>Jeffrey</td>
-							<td>CSBA</td>
-							<td>short</td>
-						</tr>
-						<tr class="person">
-							<td><div class="portrait"><img class="img-responsive" src="sample.jpg"></div></td>
-							<td>Jeffery</td>
-							<td>CSCI</td>
-							<td>short</td>
-						</tr>
-					</tbody>
-				</table>
-<!--
+			<div id="sponsors" class="container">
+				<h2>Special Thanks To</h2>
 				<div class="row">
-				<div class="person">
-					<div class="col-md-3"><div class="portrait"><img class="img-responsive" src="sample.jpg"></div></div>
-					<div class="col-md-3">
-						<div>Name</div>
-						<div>Major</div>
-						<div>Email</div>
-					</div>
+					<div class="col-md-4"><img src="potato2.jpg"/></div>
+					<div class="col-md-4"><img src="potato2.jpg"/></div>
+					<div class="col-md-4"><img src="potato2.jpg"/></div>				
 				</div>
-				<div class="person">
-					<div class="col-md-3"><div class="portrait"><img class="img-responsive" src="sample.jpg"></div></div>
-					<div class="col-md-3">
-						<div>Name</div>
-						<div>Major</div>
-						<div>Email</div>
-					</div>
+				<div class="row">
+					<div class="col-md-4"><img src="potato2.jpg"/></div>
+					<div class="col-md-4"><img src="potato2.jpg"/></div>
+					<div class="col-md-4"><img src="potato2.jpg"/></div>				
 				</div>
-				</div>
-				-->
 			</div>
 		</div>
+
+		<div id="eboard" class="container tab-pane fade">
+			<div class="row">
+				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+					<img id="img-circle" src="sample2.jpg"/>
+				</button></div><h3>Jeffrey Chen</h3></div>
+				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+					<img id="img-circle" src="sample2.jpg"/>
+				</button></div><h3>Jeffrey Chen</h3></div>
+				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+					<img id="img-circle" src="sample2.jpg"/>
+				</button></div><h3>Jeffrey Chen</h3></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+					<img id="img-circle" src="sample2.jpg"/>
+				</button></div><h3>Jeffrey Chen</h3></div>
+				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+					<img id="img-circle" src="sample2.jpg"/>
+				</button></div><h3>Jeffrey Chen</h3></div>
+				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+					<img id="img-circle" src="sample2.jpg"/>
+				</button></div><h3>Jeffrey Chen</h3></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+					<img id="img-circle" src="sample2.jpg"/>
+				</button></div><h3>Jeffrey Chen</h3></div>
+				<div class="col-md-4"></div>
+			</div>
+
+			  <div class="modal fade" id="member1" role="dialog">
+				<div class="modal-dialog modal-lg">
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h2 class="modal-title">Title</h2>
+			        </div>
+			        <div class="modal-body">
+			          <div class="col-md-3"><div class="portrait"><img id="img-circle" src="sample2.jpg"/></div></div>
+			          <div class="col-md-9">Description about the Board Member goes here</div>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+
+		</div>
+	</div>
 </body>
 </html>
