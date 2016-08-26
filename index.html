@@ -293,13 +293,6 @@ hr {
 
 }
 
-@media screen and (max-width:768px) {
-	#myCarousel{
-		visibility: hidden;
-		height: 0px;
-	}
-}
-
 .modal-body {
 	height: 280px;
 	text-align: center;
@@ -316,6 +309,12 @@ hr {
 	text-align: center;
 	color: #d51055;
 	margin-bottom: 2%;
+}
+
+.modal-trigger {
+	padding: 0;
+border: none;
+background: none;
 }
 
 	</style>
@@ -343,7 +342,7 @@ hr {
 		      <!--<li><a data-toggle="tab" href="#"><span class="glyphicon  glyphicon-calendar"></span> Events</a></li> -->
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">
-		    	<li><a href="http://innovi.space/">JOIN NOW  <span class="glyphicon glyphicon-log-in"></span></a></li>
+		    	<li><a href="http://innovi.space/" target="_blank">JOIN NOW  <span class="glyphicon glyphicon-log-in"></span></a></li>
 		    </ul>
 		</div>
 	  </div>
@@ -423,35 +422,45 @@ hr {
 
 		<div id="eboard" class="container tab-pane fade">
 			<div class="row">
-				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member1">
 					<img id="img-circle" src="sample2.jpg"/>
 				</button></div><h3>Jeffrey Chen</h3></div>
-				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member1">
 					<img id="img-circle" src="sample2.jpg"/>
 				</button></div><h3>Jeffrey Chen</h3></div>
-				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member1">
 					<img id="img-circle" src="sample2.jpg"/>
 				</button></div><h3>Jeffrey Chen</h3></div>
 			</div>
 			<div class="row">
-				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member1">
 					<img id="img-circle" src="sample2.jpg"/>
 				</button></div><h3>Jeffrey Chen</h3></div>
-				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member1">
 					<img id="img-circle" src="sample2.jpg"/>
 				</button></div><h3>Jeffrey Chen</h3></div>
-				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member1">
 					<img id="img-circle" src="sample2.jpg"/>
 				</button></div><h3>Jeffrey Chen</h3></div>
 			</div>
 			<div class="row">
 				<div class="col-md-4"></div>
-				<div class="col-md-4"><div class="portrait"><button type="button" data-toggle="modal" data-target="#member1">
+				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member1">
 					<img id="img-circle" src="sample2.jpg"/>
 				</button></div><h3>Jeffrey Chen</h3></div>
 				<div class="col-md-4"></div>
 			</div>
+		</div>
+	</div>
+	</br>
+	<div class="container" id="footer"> 
+	<a href="https://www.facebook.com/uscmakers/" target="_blank"><img src="img/facebook.png" class="sMedia img-responsive"></a>
+	<a href="https://www.instagram.com/uscmakers/?hl=en" target="_blank"><img src="img/instagram.png" class="sMedia img-responsive"></a>
+	<!--TODO: Add a modal that sends a form to the email-->
+	<button class="modal-trigger" type="button" data-toggle="modal" data-target="#member2"><img src="img/email.png" class="sMedia img-responsive"></button>
+	<h5>A University of Southern California Organization</h5>
 
+	</div>
 			  <div class="modal fade" id="member1" role="dialog">
 				<div class="modal-dialog modal-lg">
 			      <div class="modal-content">
@@ -469,16 +478,22 @@ hr {
 			      </div>
 			    </div>
 			  </div>
-
-		</div>
-	</div>
-	</br>
-	<div class="container" id="footer"> 
-	<a href="https://www.facebook.com/uscmakers/"><img src="img/facebook.png" class="sMedia img-responsive"></a>
-	<a href="https://www.instagram.com/uscmakers/?hl=en"><img src="img/instagram.png" class="sMedia img-responsive"></a>
-	<!--TODO: Add a modal that sends a form to the email-->
-	<img src="img/email.png" class="sMedia img-responsive">
-	<h5>A University of Southern California Organization</h5>
-	</div>
+			  <div class="modal fade" id="member2" role="dialog">
+				<div class="modal-dialog modal-lg">
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h2 class="modal-title">Title</h2>
+			        </div>
+			        <div class="modal-body">
+			          <div class="col-md-3"><div class="portrait"><img id="img-circle" src="sample2.jpg"/></div></div>
+			          <div class="col-md-9">Description about the Board Member goes here</div>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
 </body>
 </html>
