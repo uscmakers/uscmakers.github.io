@@ -181,13 +181,19 @@
 	margin-top: 20px;
 }
 
-.col-md-4 {
+#eboard .row .col-md-4 {
 	text-align: center;
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
-.col-md-4 img {
+#sponsors .row .col-md-4 {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#sponsors .row .col-md-4 img {
 	width: 75%;
 }
 
@@ -293,7 +299,7 @@ hr {
 
 }
 
-.modal-body {
+#member1 .modal-body {
 	height: 280px;
 	text-align: center;
 }
@@ -315,6 +321,20 @@ hr {
 	padding: 0;
 border: none;
 background: none;
+}
+
+
+#contact .modal-body {
+	text-align: center;
+}
+
+#contact .modal-body .row{
+	text-align: right;
+}
+
+#contact .modal-body .row .col-md-8 input,textarea {
+	float: left;
+	width: 70%;
 }
 
 	</style>
@@ -457,7 +477,7 @@ background: none;
 	<a href="https://www.facebook.com/uscmakers/" target="_blank"><img src="img/facebook.png" class="sMedia img-responsive"></a>
 	<a href="https://www.instagram.com/uscmakers/?hl=en" target="_blank"><img src="img/instagram.png" class="sMedia img-responsive"></a>
 	<!--TODO: Add a modal that sends a form to the email-->
-	<button class="modal-trigger" type="button" data-toggle="modal" data-target="#member2"><img src="img/email.png" class="sMedia img-responsive"></button>
+	<button class="modal-trigger" type="button" data-toggle="modal" data-target="#contact"><img src="img/email.png" class="sMedia img-responsive"></button>
 	<h5>A University of Southern California Organization</h5>
 
 	</div>
@@ -478,16 +498,33 @@ background: none;
 			      </div>
 			    </div>
 			  </div>
-			  <div class="modal fade" id="member2" role="dialog">
+			  <div class="modal fade" id="contact" role="dialog">
 				<div class="modal-dialog modal-lg">
 			      <div class="modal-content">
 			        <div class="modal-header">
 			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h2 class="modal-title">Title</h2>
+			          <h2 class="modal-title">Contact Us</h2>
 			        </div>
 			        <div class="modal-body">
-			          <div class="col-md-3"><div class="portrait"><img id="img-circle" src="sample2.jpg"/></div></div>
-			          <div class="col-md-9">Description about the Board Member goes here</div>
+			          <form action="http://www.usc.edu/cgi-bin/mail_form/chen305@usc.edu" method="POST" id="query" target="_blank">
+			          	<div class="row">
+			          		<div class="col-md-4">Name: </div>
+			          		<div class="col-md-8"><input type="text" name="name"></div>
+			          	</div>
+			          	<br>
+			          	<div class="row">
+			          		<div class="col-md-4">E-Mail: </div>
+			          		<div class="col-md-8"><input type="text" name="email"></div>
+			          	</div>
+			          	<br>
+			          	<div class="row" style="margin-bottom: 10px;">
+			          		<div class="col-md-4">Question: </div>
+			          		<div class="col-md-8"><textarea name="question" rows="4" form="query"></textarea>
+			          	</div>
+			          	</div>
+						<input type="submit" value="Submit">
+						<input type="reset" value="Reset">
+			          </form>
 			        </div>
 			        <div class="modal-footer">
 			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
