@@ -1,319 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
+	<title>Makers at USC</title>
+	<link rel="stylesheet" href="main.css" type="text/css"/>
+	<link rel="icon" href="images/icon.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-
-	<link rel="icon" href="img/thumbnail.png">
-
-	<title>USC Makers</title>
-
-	<!-- jQuery library -->
-	<script src="bootstrap-3.3.7-dist/js/jquery-3.1.0.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-	<script type="text/javascript">
-
-	</script>
-	<style type="text/css">
-  	@font-face {
-  		font-family: "MyriadPro-Regular";
-  		src: url(font/MyriadPro-Regular.otf) format("opentype");
-  	}
-
-  	@font-face {
-  		font-family: "Futura-Condensed-Medium";
-  		src: url(font/Futura-Condensed-Medium.ttf) format("truetype");
-  	}
-	</style>
-  	<LINK href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-	  <div class="container-fluid">
-	  	
-	    <div class="navbar-header">
-	    
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-
-	      <span class="	glyphicon glyphicon-menu-hamburger" style="color: white;"></span>
-	      </button>
-	      <a class="navbar-brand" data-toggle="tab" href="#home"><img name="Logo" id="logo" src="img/logo_white.png"></a>
-	    </div>
-
-	   
-	    <div class="collapse navbar-collapse" id="myNavbar">
-		    <ul class="nav navbar-nav">
-		      <li class="active"><a data-toggle="tab" href="#home"><span class="glyphicon glyphicon-home"></span>  HOME</a></li>
-		      <li><a data-toggle="tab" href="#about"><span class="glyphicon  glyphicon-list-alt"></span>  ABOUT</a></li>
-		      <li><a data-toggle="tab" href="#eboard"><span class="glyphicon glyphicon-user"></span>  E-BOARD</a></li> 
-		      <!--<li><a data-toggle="tab" href="#"><span class="glyphicon  glyphicon-calendar"></span> Events</a></li> -->
-		    </ul>
-		    <ul class="nav navbar-nav navbar-right">
-		    	<li><a href="http://innovi.space/" target="_blank">JOIN NOW  <span class="glyphicon glyphicon-log-in"></span></a></li>
-		    </ul>
+	<div id="backgroundWrapper">
+	<video id="backgroundVideo" src="images/bg.mp4" autoplay loop class="centered"></video>
+	<div id="banner">
+		<img id="mobileLogo" src="images/logo_white.png">
+		<div id="nav">
+		<div id="homeButton"><img src="images/icon.png"></div>
+			<ul>
+				<li id="aboutButton">about</li>
+				<li id="eboardButton">e-board</li>
+				<li id="joinusButton"><a href="https://www.facebook.com/uscmakers/">join us</a></li>
+			</ul>
 		</div>
-	  </div>
-	</nav>
-
-
-	<div class="tab-content" id="content">
-		<div id="home" class="tab-pane fade in active">
-		  <br>
-		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-		    <!-- Indicators -->
-		    <ol class="carousel-indicators">
-		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		      <li data-target="#myCarousel" data-slide-to="1"></li>
-		      <li data-target="#myCarousel" data-slide-to="2"></li>
-		      <li data-target="#myCarousel" data-slide-to="3"></li>
-		    </ol>
-
-		    <!-- Wrapper for slides -->
-		    <div class="carousel-inner" role="listbox">
-		      <div class="item active">
-		        <img class="img-responsive" src="potato1.jpg" alt="Potato">
-		      </div>
-
-		      <div class="item">
-		        <img src="potato2.jpg" alt="Potato" width="460" height="345">
-		      </div>
-		    
-		      <div class="item">
-		        <img src="potato3.jpg" alt="Potato" width="460" height="345">
-		      </div>
-
-		      <div class="item">
-		        <img src="potato4.jpg" alt="Potato" width="460" height="345">
-		      </div>
-		    </div>
-
-		    <!-- Left and right controls -->
-		    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		      <span class="sr-only">Previous</span>
-		    </a>
-		    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		      <span class="sr-only">Next</span>
-		    </a>
-		  </div>
-		  <div class="container">
-
-		</div>
-		</div>
-
-		<div id="about" class="container tab-pane fade">
-			<div id="description" title="temp text">
-				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-				</p>
-			</div>
-			<br>
-
-			<hr>
-			<!--
-			<div id="sponsors" class="container">
-				<h2>Special Thanks To</h2>
-				<div class="row">
-					<div class="col-md-4"><img src="potato2.jpg"/></div>
-					<div class="col-md-4"><img src="potato2.jpg"/></div>
-					<div class="col-md-4"><img src="potato2.jpg"/></div>				
-				</div>
-				<div class="row">
-					<div class="col-md-4"><img src="potato2.jpg"/></div>
-					<div class="col-md-4"><img src="potato2.jpg"/></div>
-					<div class="col-md-4"><img src="potato2.jpg"/></div>				
-				</div>
-			</div>
-			-->
-		</div>
-
-		<div id="eboard" class="container tab-pane fade">
-			<div class="row">
-				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member1">
-					<img id="img-circle" src="img/Lindsay_White.jpg"/>
-				</button></div><h3>Lindsay White</h3></div>
-				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member2">
-					<img id="img-circle" src="img/Sampurna_Basu.jpg"/>
-				</button></div><h3>Sampurna Basu</h3></div>
-				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member3">
-					<img id="img-circle" src="img/Yutong_Gu.jpg"/>
-				</button></div><h3>Yutong Gu</h3></div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member4">
-					<img id="img-circle" src="img/Jeffrey_Chen.jpg"/>
-				</button></div><h3>Jeffrey Chen</h3></div>
-				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member5">
-					<img id="img-circle" src="img/Robert_Wu.jpg"/>
-				</button></div><h3>Robert Wu</h3></div>
-				<div class="col-md-4"><div class="portrait"><button class="modal-trigger" type="button" data-toggle="modal" data-target="#member6">
-					<img id="img-circle" src="img/temp.jpg"/>
-				</button></div><h3>Marc Ruelas</h3></div>
-			</div>
+		<div id="introLine" class="centered">
+			MAKERS<div id="marquee">at USC</div>
 		</div>
 	</div>
-	</br>
-	<div class="container" id="footer"> 
-	<a href="https://www.facebook.com/uscmakers/" target="_blank"><img src="img/facebook.png" class="sMedia img-responsive"></a>
-	<a href="https://www.instagram.com/uscmakers/?hl=en" target="_blank"><img src="img/instagram.png" class="sMedia img-responsive"></a>
-	<!--TODO: Add a modal that sends a form to the email-->
-	<button class="modal-trigger" type="button" data-toggle="modal" data-target="#contact"><img src="img/email.png" class="sMedia img-responsive"></button>
-	<!--<a href="https://goo.gl/forms/SvmIKAb2Hv4SI6nb2" target="_blank"><img src="img/email.png" class="sMedia img-responsive"></a>-->
-	<h5>A University of Southern California Organization</h5>
-
+	<div id="content">
+		<div id="about">
+		<div id="firstSectionHeader" class="sectionHeader">We are the tinkerers of USC.</div>
+			Makers is USC's premier electrical engineering organization. From wearables to logic circuits, we provide our members with the knowledge, materials and connections to make amazing things.<br><br>
+			Our members work in teams to create diverse, interesting projects each semester. We offer weekly meetings, regular workshops on skills such as Arduino and Internet of Things, company seminars, networking opportunities, fun retreats, and other social events!<br><div id="hiddenSpaces"><br><br></div>
+			<img src="images/groupphoto.jpg">
+			<img src="images/seminar.jpg">
+			<img src="images/magicmirror.jpg">
+		</div>
+		<div id="eboard">
+		<div class="sectionHeader">Meet our team!</div>
+			<div>
+				<div id="imageWrapper"><img src="images/lindsay.jpg"><span id="nametag">Lindsay White<br>President</span></div>
+				<div id="imageWrapper"><img src="images/yutong.jpg"><span id="nametag">Yutong Gu<br>Vice President</span></div>
+				<div id="imageWrapper"><img src="images/jeffrey.jpg"><span id="nametag">Jeffrey Chen<br>Co-director of Programming</span></div>
+				<div id="imageWrapper"><img src="images/robert.jpg"><span id="nametag">Robert Wu<br>Co-director of Programming</span></div>
+				<div id="imageWrapper"><img src="images/nishir.jpg"><span id="nametag">Nishir Shelat<br>Director of Marketing</span></div>
+				<div id="imageWrapper"><img src="images/shivangi.jpg"><span id="nametag">Shivangi Agarwal<br>Social Chair</span></div>
+				<div id="imageWrapper"><img src="images/myrl.jpg"><span id="nametag">Myrl Marmarelis<br>Director of Outreach</span></div>
+				<div id="imageWrapper"><img src="images/daniel.jpg"><span id="nametag">Daniel Koo<br>Director of Finance</span></div>
+			</div>
 	</div>
-			  <div class="modal fade memberDesc" id="member1" role="dialog">
-				<div class="modal-dialog modal-lg">
-			      <div class="modal-content">
-			        <div class="modal-header">
-			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h2 class="modal-title">President</h2>
-			        </div>
-			        <div class="modal-body">
-			          <div class="col-md-3"><div class="portrait"><img id="img-circle" src="img/Lindsay_White.jpg"/></div></div>
-			          <div class="col-md-1"></div>
-			          <div class="col-md-8 description">Hi! I’m Lindsay. I hail from Seattle, WA, and made my journey to LA in the fall of 2013 (that makes me old). I am a senior studying Electrical Engineering. I have dipped my toes in a variety of disciplines, from robotics research to hardware design at Intel to teaching Lego camps; each delivering its own valuable experience. I enjoy long walks in the wilderness, baby animals, and a good book.</div>
-			        </div>
-			        <div class="modal-footer">
-			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="modal fade memberDesc" id="member2" role="dialog">
-				<div class="modal-dialog modal-lg">
-			      <div class="modal-content">
-			        <div class="modal-header">
-			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h2 class="modal-title">Director of Outreach</h2>
-			        </div>
-			        <div class="modal-body">
-			          <div class="col-md-3"><div class="portrait"><img id="img-circle" src="img/Sampurna_Basu.jpg"/></div></div>
-			          <div class="col-md-1"></div>
-			          <div class="col-md-8 description">Hello, I'm Sampurna! I am a junior studying Computer Engineering &amp; Computer Science.  On campus, I am an undergraduate researcher, the president of USC’s chapter of ACM, and an undergraduate TA in CS.  On weekends, I am a hacker and IoT enthusiast.  My fantasy invention would be caffeinated bubble tea.</div>
-			        </div>
-			        <div class="modal-footer">
-			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-  			  <div class="modal fade memberDesc" id="member3" role="dialog">
-				<div class="modal-dialog modal-lg">
-			      <div class="modal-content">
-			        <div class="modal-header">
-			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h2 class="modal-title">Director of Membership</h2>
-			        </div>
-			        <div class="modal-body">
-			          <div class="col-md-3"><div class="portrait"><img id="img-circle" src="img/Yutong_Gu.jpg"/></div></div>
-			          <div class="col-md-1"></div>
-			          <div class="col-md-8 description">Yutong is a sophomore in Electrical Engineering.</div>
-			        </div>
-			        <div class="modal-footer">
-			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="modal fade memberDesc" id="member4" role="dialog">
-				<div class="modal-dialog modal-lg">
-			      <div class="modal-content">
-			        <div class="modal-header">
-			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h2 class="modal-title">Co-Technical Officer</h2>
-			        </div>
-			        <div class="modal-body">
-			          <div class="col-md-3"><div class="portrait"><img id="img-circle" src="img/Jeffrey_Chen.jpg"/></div></div>
-			          <div class="col-md-1"></div>
-			          <div class="col-md-8 description">What up, I'm Jeffrey. I am a a junior in Computer Engineering &amp; Computer Science from the Chicago-land area. On campus, you can either find me busy in class, working as a Course Producer for EE 109, or searching for free food. I like to tinker with both the software and hardware side of computing and am personally into old pieces of tech.</div>
-			        </div>
-			        <div class="modal-footer">
-			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="modal fade memberDesc" id="member5" role="dialog">
-				<div class="modal-dialog modal-lg">
-			      <div class="modal-content">
-			        <div class="modal-header">
-			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h2 class="modal-title">Co-Technical Officer</h2>
-			        </div>
-			        <div class="modal-body">
-			          <div class="col-md-3"><div class="portrait"><img id="img-circle" src="img/Robert_Wu.jpg"/></div></div>
-			          <div class="col-md-1"></div>
-			          <div class="col-md-8 description">Hey, I'm Robert! I'm a EE major who really likes software. I love going to hackathons and building stuff. I dream of building the future with my hands and my mind. Fight on!</div>
-			        </div>
-			        <div class="modal-footer">
-			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="modal fade memberDesc" id="member6" role="dialog">
-				<div class="modal-dialog modal-lg">
-			      <div class="modal-content">
-			        <div class="modal-header">
-			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h2 class="modal-title">Director of Finance</h2>
-			        </div>
-			        <div class="modal-body">
-			          <div class="col-md-3"><div class="portrait"><img id="img-circle" src="img/temp.jpg"/></div></div>
-			          <div class="col-md-1"></div>
-			          <div class="col-md-8 description">Marc is a sophomore in Marshall School of Business.</div>
-			        </div>
-			        <div class="modal-footer">
-			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-
-			  <div class="modal fade" id="contact" role="dialog">
-				<div class="modal-dialog modal-lg">
-			      <div class="modal-content">
-			        <div class="modal-header">
-			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h2 class="modal-title">Contact Us</h2>
-			        </div>
-			        <div class="modal-body">
-			        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOSYkZnVXnyOpnYvz5X9ratetQ_I20HnMw1N6VBVnUbcktVA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-			        <!--
-			          <form action="mailto:uscmakers@gmail.com?" method="POST" id="query" target="_blank">
-			          	<div class="row">
-			          		<div class="col-md-4">Name: </div>
-			          		<div class="col-md-8"><input type="text" name="name"></div>
-			          	</div>
-			          	<br>
-			          	<div class="row">
-			          		<div class="col-md-4">E-Mail: </div>
-			          		<div class="col-md-8"><input type="text" name="email"></div>
-			          	</div>
-			          	<br>
-			          	<div class="row" style="margin-bottom: 10px;">
-			          		<div class="col-md-4">Question: </div>
-			          		<div class="col-md-8"><textarea name="message" rows="4" form="query"></textarea>
-			          	</div>
-			          	</div>
-						<input type="submit" value="Submit">
-						<input type="reset" value="Reset">
-			          </form>
-			          -->
-			        </div>
-			        <div class="modal-footer">
-			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
+	</div>
+	<footer>Makers at USC &copy; 2017<span id="footerText"> | Find us at <a href="https://www.facebook.com/uscmakers/">facebook.com/uscmakers</a></span></footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </html>
