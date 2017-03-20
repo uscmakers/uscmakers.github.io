@@ -94,8 +94,10 @@ a {
 }
 
 #nav {
+    height: 66px;
 	opacity: 1;
 	z-index: 100;
+	position: fixed;
 	background-color: white;
 	width: 100%;
 	text-align: center;
@@ -254,6 +256,10 @@ footer {
 	padding: 5px;
 	background: white;
 	color: #5E0921;
+}
+
+.nav-up {
+	/*top: -66px;*/
 }
 
 @media screen and (max-width: 800px) {
