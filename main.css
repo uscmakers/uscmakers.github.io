@@ -8,8 +8,8 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	font-family: 'Aspira', serif;
-	font-size: 200px;
+	font-family: 'Lora', serif;
+	font-size: 175px;
 	cursor: default;
 }
 
@@ -82,7 +82,6 @@ a {
 }
 
 .button {
-	font-family: Aspira Bold;
 	transition: opacity 0.4s;
 }
 
@@ -91,6 +90,7 @@ a {
 }
 
 #banner {
+	font-family: Aspira;
 	height: 100vh;
 }
 
@@ -184,7 +184,6 @@ a {
 }
 
 #content {
-	font-family: Aspira Thin;
 	background-color: #5E0921;
 	background-size: cover;
 	text-align: left;
@@ -196,7 +195,6 @@ a {
 	background-color: white;
 	width: 125%;
 	transform: translateX(-10%);
-	font-family: Aspira;
 	margin: 50px 0;
 	padding: 45px 0;
 	text-align: center;
