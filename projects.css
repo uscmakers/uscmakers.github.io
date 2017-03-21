@@ -1,0 +1,287 @@
+body {
+	background-color: #5E0921;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Lora', serif;
+	font-size: 175px;
+	cursor: default;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+	background-color: white;
+    outline: 1px solid white;
+}
+ 
+body::-webkit-scrollbar-thumb {
+	background-color: gray;
+}
+
+@keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+@font-face {
+	src: url('fonts/Aspira.ttf');
+	font-family: Aspira;
+}
+
+@font-face {
+	src: url('fonts/Aspira Thin.ttf');
+	font-family: Aspira Thin;
+}
+
+@font-face {
+	src: url('fonts/Aspira Bold.ttf');
+	font-family: Aspira Bold;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#backgroundVideo {
+	position: fixed;
+	z-index: -100;
+	width: 100%;
+}
+
+#homeButton:hover {
+	cursor: pointer;
+}
+
+#mobileLogo {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 150px;
+}
+
+.button {
+	transition: opacity 0.4s;
+}
+
+.button:hover {
+	opacity: 0.5;
+}
+
+#banner {
+	font-family: Aspira;
+	height: 100vh;
+}
+
+#nav {
+    height: 66px;
+	opacity: 1;
+	z-index: 100;
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	text-align: center;
+	float: right;
+	font-size: 20px;
+	color: #5E0921;
+}
+
+#nav img {
+	float: left;
+	width: 160px;
+	padding-top: 7px;
+	padding-left: 30px;
+}
+
+#nav ul {
+	list-style-type: none;
+	float: right;
+}
+
+#nav ul li {
+	display: inline;
+	padding: 7px 10px;
+	margin: 0px 15px;
+	transition: 0.3s;
+}
+
+#nav ul li:hover {
+	color: white;
+	background-color: black;
+	opacity: 0.4;
+	cursor: pointer;
+}
+
+#logo {
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 15px;
+	color: white;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	width: 30px;
+	height: 30px;
+	float: left;
+	font-size: 15%;
+}
+
+#introLine {
+	font-size: 70%;
+	text-align: center;
+	color: #eaeaea;
+	text-shadow: 3px 3px 8px black;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+
+#hiddenSpaces {
+	display: none;
+}
+
+#introLine img {
+	border-radius: 50%;
+	width: 250px;
+}
+
+#marquee {
+	font-size: 50%;
+
+}
+
+#menuButton {
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	float: right;
+	font-size: 15%;
+}
+
+#menuButton img {
+	width: 45px;
+	height: 45px;
+}
+
+#content {
+	background-color: #5E0921;
+	background-size: cover;
+	text-align: left;
+	padding-bottom: 50px;
+}
+
+.sectionHeader {
+	color: #5E0921;
+	background-color: white;
+	width: 125%;
+	transform: translateX(-10%);
+	margin: 50px 0;
+	padding: 45px 0;
+	text-align: center;
+	font-size: 35px;
+}
+
+#projectContent {
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	font-size: 12%;
+	color: white;
+}
+
+#projectContent img {
+	float: right;
+	border-radius: 20px;
+	width: 300px;
+	height: 250px;
+	object-fit: cover;
+	display: inline;
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+
+footer {
+	font-size: 15px;
+	padding: 5px;
+	background: white;
+	color: #5E0921;
+}
+
+.nav-up {
+	/*top: -66px;*/
+}
+
+@media screen and (max-width: 800px) {
+	#content {
+		text-align: center;
+	}
+	#backgroundVideo {
+		display: none;
+	}
+	.sectionHeader {
+		margin-top: 0;
+	}
+	#banner {
+		height: 85px;
+	}
+	#mobileLogo {
+		display: inline;
+	}
+	#logo {
+		position: absolute;
+		top: 40px;
+		left: 40px;
+		width: 20px;
+		height: 20px;
+		float: left;
+		font-size: 15%;
+	}
+	#nav {
+		display: none;
+	}
+	#menuButton {
+		display: block;
+	}
+	#projectContent img {
+		width: 80%;
+		float: none;
+		padding: 0;
+		margin: 0 10%;
+		margin-bottom: 30px;
+	}
+	#introLine {
+		display: none;
+	}
+	.sectionHeader {
+		padding: 30px 0;
+	}
+	#firstSectionHeader {
+		margin-top: 0;
+	}
+	#hiddenSpaces {
+		display: block;
+	}
+	#footerText {
+		display: none;
+	}
+}
