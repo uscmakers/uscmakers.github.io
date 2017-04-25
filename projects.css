@@ -75,10 +75,10 @@ a {
 
 #mobileLogo {
 	display: none;
-	position: absolute;
-	top: 20px;
-	left: 20px;
+	padding-top: 24px;
+	padding-right: 20px;
 	width: 150px;
+	float: right;
 }
 
 .button {
@@ -104,25 +104,24 @@ a {
 	text-align: center;
 	float: right;
 	font-size: 20px;
-	color: #5E0921;
+	color: black;
 }
 
 #nav img {
-	float: left;
-	width: 160px;
-	padding-top: 7px;
-	padding-left: 30px;
+	float: right;
+	padding-top: 13px;
+	padding-right: 30px;
 }
 
 #nav ul {
 	list-style-type: none;
-	float: right;
+	float: left;
 }
 
 #nav ul li {
 	display: inline;
 	padding: 7px 10px;
-	margin: 0px 15px;
+	margin: 0px 5px;
 	transition: 0.3s;
 }
 
