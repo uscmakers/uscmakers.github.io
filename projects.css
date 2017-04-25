@@ -231,6 +231,9 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+	body {
+		background-color: #990000;
+	}
 	#content {
 		text-align: center;
 	}
