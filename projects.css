@@ -202,6 +202,7 @@ a {
 
 #projectContent {
 	text-align: left;
+	min-height: 400px;
 	width: 80%;
 	margin: auto;
 	font-size: 12%;
