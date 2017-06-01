@@ -282,7 +282,6 @@ iframe {
 	#firstSectionHeader {
 		margin-top: 300px;
         z-index: 100;
-        font-size: 120%;
 	}
 	#hiddenSpaces {
 		display: block;
@@ -385,6 +384,11 @@ iframe {
         animation-name: fadeIn;
         animation-duration: 1s;
         font-size: 30%;
+    }
+    .eventDescription {
+        padding-left: 10px;
+        padding-right: 10px;
+        
     }
 }
 
