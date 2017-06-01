@@ -334,7 +334,7 @@ iframe {
         background-image: url("images/projectsPicture.JPG");
         background-repeat: no-repeat;
         background-size: cover;
-
+        background-position: right;
         position: absolute;
         top: 50px;
         min-width: 98vw;
