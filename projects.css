@@ -421,7 +421,7 @@ iframe {
         display: inline-block;
         position: relative;
         z-index: 300;
-        top: 10vh;
+        top: 60px;
         text-align: center;
         color: #eaeaea;
         text-shadow: 3px 3px 8px black;
