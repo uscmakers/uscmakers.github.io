@@ -232,9 +232,30 @@ footer {
 	/*top: -66px;*/
 }
 
+#projectsPic {
+    display: none;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+#hamburgerMenu {
+    display: none;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.mobileTitle {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
 	body {
-		background-color: #990000;
+		background-color: #000;
 	}
 	#content {
 		text-align: center;
@@ -248,8 +269,20 @@ footer {
 	#banner {
 		height: 85px;
 	}
+    #mobileBanner {
+        position: fixed;
+        background-color: #000;
+        height: 85px;
+        width: 100vw;
+        z-index: 700;
+    }
 	#mobileLogo {
 		display: inline;
+        float: right;
+        right: 0px;
+        z-index: 900;
+        top: 0px;
+        position: absolute;
 	}
 	#logo {
 		position: absolute;
@@ -280,7 +313,9 @@ footer {
 		padding: 30px 0;
 	}
 	#firstSectionHeader {
-		margin-top: 0;
+		margin-top: 300px;
+        z-index: 100;
+        font-size: 120%;
 	}
 	#hiddenSpaces {
 		display: block;
@@ -288,4 +323,99 @@ footer {
 	#footerText {
 		display: none;
 	}
+    #projectsPic {
+        display: block;
+        height: auto;
+        background-image: url("images/projectsPicture.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 85px;
+        min-width: 98vw;
+        height: 300px;
+        text-align: center;
+        vertical-align: center;
+        z-index: -200;
+    }
+    #opaqueLayer {
+        position: absolute;
+        top: 85px;
+        min-width: 98vw;
+        height: 300px;
+        background-color: #000;
+        z-index: 1;
+        opacity: 0.70;
+    }
+    #makersLogoMobile {
+        display: inline-block;
+        position: relative;
+        z-index: 300;
+        width:90vw;
+        top: 100px;
+        text-align: center;
+        
+    }
+    iframe {
+        text-align: center;
+        max-width: 75vw;
+        height: 42vw;
+        overflow: hidden;
+    }
+    #hamburgerMenu {
+        display: block;
+        position: absolute;
+        height: 30px;
+        top: 30px;
+        left: 20px;
+        position: fixed;
+    }
+    #hamburgerMenu:hover {
+        cursor: pointer;
+    }
+    div.mobileMenu {
+        position: absolute;
+        top: 85px;
+        display: none;
+        z-index: 500;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: #5e0921;
+        opacity: 0.95;
+        text-align: center;
+        position: fixed;
+    }
+    ul.mobileMenu {
+        display: none;
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        color: #FFF;
+        z-index: 600;
+        list-style: none;
+        width: 98vw;
+        position: fixed;
+        padding: 0px
+    }
+    li.mobileMenu {
+        display: none;
+        font-size: 30%;
+        top: 0px;
+        color: #FFF;
+        opacity: 1;
+        margin-bottom: 30px;
+/*        position: fixed;*/
+    }
+    .mobileTitle {
+        display: inline-block;
+        position: relative;
+        z-index: 300;
+        top: 90px;
+        text-align: center;
+        color: #eaeaea;
+        text-shadow: 3px 3px 8px black;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        font-size: 30%;
+    }
 }

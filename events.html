@@ -13,7 +13,21 @@
 	<div id="backgroundWrapper">
 	<video id="backgroundVideo" src="images/bg.mp4" autoplay loop class="centered"></video>
 	<div id="banner">
-		<a href="http://www.usc.edu/"><img id="mobileLogo" src="images/usclogowhite.png"></a>
+		<div id="mobileBanner">
+        <img src="images/menu.png" id= "hamburgerMenu">
+		<a href="http://www.usc.edu/"><img id="mobileLogo" src="images/shieldmono-white.png"></a></div>
+        <div class="mobileMenu"></div>
+            <ul class="mobileMenu">
+                <li class="mobileMenu"><a href="index.html">Home</a></li>
+                <li class="mobileMenu"><a href="projects.html">Projects</a></li>
+                <li class="mobileMenu"><a href="events.html"> Events</a></li>
+                <li class="mobileMenu"><a href="https://www.facebook.com/uscmakers/">Contact Us</a></li>
+                <li class="mobileMenu"><a href="https://makers3.typeform.com/to/e4pfWm">Apply</a></li>
+            </ul>
+        
+        <div class="mobileTitle">Events</div>
+        <div id="opaqueLayer"></div>
+        <div id="eventsPic"></div>
 		<header id="nav" class="nav-down">
 		<div id="homeButton"><a href="http://www.usc.edu/"><img src="images/usclogo.png"></a></div>
 			<ul>
@@ -28,11 +42,12 @@
 			MAKERS<div id="marquee">Events</div>
 		</div>
     </div>
-    <div class="sectionBox">
-        <div class="eventDescription">
+        <div id="firstSectionHeader" class="eventDescription">
         <h1 class="eventName">Spring 2017 Showcase</h1>
         <h2 class="eventDate">May 1, 2017</h2>
         </div>
+    <div class="sectionBox">
+        
         
         <div class="eventImageBox">
         <div id="imageWrapper"><img class="eventsImage" src="images/Events/showcase/intro.JPG"></div>
@@ -54,18 +69,19 @@
         <div id="imageWrapper"><img class="eventsImage" src="images/Events/showcase/groupshot2.JPG"></div>
         <div id="imageWrapper"><img class="eventsImage" src="images/Events/showcase/groupshot3.JPG"></div>
         <div id="imageWrapper"><img class="eventsImage" src="images/Events/showcase/groupshot4.JPG"></div>
-        <div id="imageWrapper"><img class="eventsImage" src="images/Events/showcase/groupshot5.JPG"></div>
+        <div id="imageWrapper"><img class="eventsImage" src="images/seminar.jpg"></div>
         </div>
         
-        <div class="eventDescription">
+        <div class="eventDescription" class="notFirstSectionHeader">
         <h1 class="eventName">Makers Seminar with Phase Four</h1>
         <h2 class="eventDate">February 23, 2017</h2>
             </div>
+        <div class="sectionBox">
         <div class="eventImageBox">
         <div id="imageWrapper"><img class="eventsImage" src="images/Events/Seminars/phasefour1.jpg"></div>
         <div id="imageWrapper"><img class="eventsImage" src="images/Events/Seminars/phasefour2.jpg"></div>
         <div id="imageWrapper"><img class="eventsImage" src="images/Events/Seminars/phasefour3.jpg"></div>
-        </div>
+            </div></div>
     </div>
 	<footer>Makers at USC &copy; 2017<span id="footerText"> | Find us at <a href="https://www.facebook.com/uscmakers/">facebook.com/uscmakers</a></span></footer>
     </div>

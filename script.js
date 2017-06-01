@@ -37,3 +37,7 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+$("#hamburgerMenu").on("click",
+    function() {$(".mobileMenu").toggle();
+});
