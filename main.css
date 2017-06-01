@@ -294,6 +294,7 @@ iframe {
 	}
 	.sectionHeader {
 		margin-top: 0;
+        padding: 30px;
 	}
 	#banner {
 		height: 50px;
@@ -347,10 +348,11 @@ iframe {
 		display: none;
 	}
 	.sectionHeader {
-		padding: 30px 0;
+		padding: 30px 0px;
+        
 	}
 	#firstSectionHeader {
-        margin-top: 100vh;
+        margin-top: 300px;
         z-index: 100;
 	}
 	#eboard img {
@@ -378,7 +380,7 @@ iframe {
         position: absolute;
         top: 50px;
         min-width: 98vw;
-        height: 100vh;
+        height: 300px;
         text-align: center;
         vertical-align: center;
         z-index: -200;
@@ -387,7 +389,7 @@ iframe {
         position: absolute;
         top: 50px;
         min-width: 98vw;
-        height: 100vh;
+        height: 300px;
         background-color: #000;
         z-index: 1;
         opacity: 0.50;
@@ -396,8 +398,8 @@ iframe {
         display: inline-block;
         position: relative;
         z-index: 300;
-        width:90vw;
-        top: 10vh;
+        width: 70vw;
+        top: 100px;
         text-align: center;
         text-shadow: 3px 3px 8px black;
         animation-name: fadeIn;
