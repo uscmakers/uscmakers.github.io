@@ -366,11 +366,11 @@ iframe {
     }
     li.mobileMenu {
         display: none;
-        font-size: 30%;
+        font-size: 25%;
         top: 0px;
         color: #FFF;
         opacity: 1;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
 /*        position: fixed;*/
     }
     .mobileTitle {
