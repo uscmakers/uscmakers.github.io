@@ -354,7 +354,7 @@ iframe {
         background-position: right;
         position: absolute;
         top: 50px;
-        min-width: 98vw;
+        min-width: 100vw;
         height: 300px;
         text-align: center;
         vertical-align: center;
@@ -363,7 +363,7 @@ iframe {
     #opaqueLayer {
         position: absolute;
         top: 50px;
-        min-width: 98vw;
+        min-width: 100vw;
         height: 300px;
         background-color: #000;
         z-index: 1;
@@ -417,7 +417,7 @@ iframe {
         color: #FFF;
         z-index: 600;
         list-style: none;
-        width: 98vw;
+        width: 100vw;
         position: fixed;
         padding-right: 0px;
         padding-bottom: 0px;

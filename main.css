@@ -252,7 +252,7 @@ a {
 
 footer {
 	font-size: 15px;
-	padding: 5px;
+	padding-top: 5px;
 	background: white;
 	color: #5E0921;
 }
@@ -280,6 +280,26 @@ iframe {
 
 .mobileMenu {
     display: none;
+}
+
+#sponsorLogos {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#mhiLogo {
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#cciLogo {
+    width: 300px;
+}
+
+#homeFooter {
+    background-color: #555;
+    color: white;
+    padding-top: 1px;
 }
 
 @media screen and (max-width: 800px) {
@@ -379,7 +399,7 @@ iframe {
         background-position: bottom center;
         position: absolute;
         top: 50px;
-        min-width: 98vw;
+        min-width: 100vw;
         height: 300px;
         text-align: center;
         vertical-align: center;
@@ -388,7 +408,7 @@ iframe {
     #opaqueLayer {
         position: absolute;
         top: 50px;
-        min-width: 98vw;
+        min-width: 100vw;
         height: 300px;
         background-color: #000;
         z-index: 1;
@@ -445,7 +465,7 @@ iframe {
         color: #FFF;
         z-index: 600;
         list-style: none;
-        width: 98vw;
+        width: 100vw;
         position: fixed;
         padding-right: 0px;
         padding-bottom: 0px;
