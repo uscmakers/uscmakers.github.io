@@ -3,7 +3,7 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
 
-$(window).scroll(function(event){
+$(window).scroll(function (event) {
     didScroll = true;
 });
 
@@ -40,4 +40,21 @@ function hasScrolled() {
 
 $("#hamburgerMenu").on("click",
     function() {$(".mobileMenu").toggle();
+});
+
+function check(form) {
+    if(form.username.value == "makersiscool" && form.password.value == "krishnaiscool")
+    {
+        window.open('secretpage.html', '_self');
+    }
+    else 
+    {
+        $("#wrongInfo").show();
+    }
+}
+
+$("#loginForm").keypress(function(e) {
+                if(e.which == 13) {
+                    check(this);
+                }
 });

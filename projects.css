@@ -1,16 +1,19 @@
 body {
 	background-color: #5E0921;
-	background-size: cover;
+/*	background-size: cover;*/
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	width: 100%;
+	max-width: 100%;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	font-family: 'Aspira Thin', serif;
 	font-size: 175px;
 	cursor: default;
+    background-image: url("images/teams_photo.JPG");
+    background-position: top;
+    background-size: cover;
 }
 
 body::-webkit-scrollbar {
@@ -223,9 +226,30 @@ a {
 
 footer {
 	font-size: 15px;
-	padding: 5px;
 	background: white;
-	color: #5E0921;
+	color: #910b3a;
+    height: 70px;
+    margin: auto;
+/*    bottom: 0;*/
+    width: 100%;
+    display: table;
+}
+.footerContent {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#makersCopyright {
+    font-size: 18px;
+    height: 50px;
+}
+.footerLogo {
+    height: 30px;
+    margin: 10px;
+}
+
+#socialMediaLogos {
+    margin-left: 30px;
 }
 
 .nav-up {
@@ -255,7 +279,8 @@ iframe {
 
 @media screen and (max-width: 800px) {
 	body {
-		background-color: #000;
+		background-color: #5e0921;
+        background-image: none;
 	}
 	#content {
 		text-align: center;
@@ -271,7 +296,7 @@ iframe {
 	}
     #mobileBanner {
         position: fixed;
-        background-color: #000;
+        background-color: #FFF;
         height: 50px;
         width: 100vw;
         z-index: 700;
@@ -350,7 +375,7 @@ iframe {
         height: 300px;
         background-color: #000;
         z-index: 1;
-        opacity: 0.50;
+        opacity: 0.20;
     }
     #makersLogoMobile {
         display: inline-block;
@@ -383,7 +408,7 @@ iframe {
         top: 50px;
         display: none;
         z-index: 500;
-        height: 200px;
+        height: 225px;
         width: 150px;
         background-color: #444;
         opacity: 0.95;
