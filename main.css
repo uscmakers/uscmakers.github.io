@@ -269,7 +269,7 @@ a {
 
 footer {
 	font-size: 15px;
-	background: white;
+	background: #AAA;
 	color: #910b3a;
     height: 70px;
     margin: auto;
@@ -357,7 +357,7 @@ iframe {
 	.sectionHeader {
 		margin-top: 0;
         padding: 30px;
-        font-size: 24px;
+        font-size: 30px;
 	}
 	#banner {
 		height: 50px;

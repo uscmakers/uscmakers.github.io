@@ -372,7 +372,7 @@ iframe {
     #eventsPic {
         display: block;
         height: auto;
-        background-image: url("images/gallery_photo.JPG");
+        background-image: url("images/mobile_gallery_photo.JPG");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
