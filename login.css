@@ -143,7 +143,6 @@ footer {
 	background: white;
 	color: #910b3a;
     height: 70px;
-    position: fixed;
     margin: auto;
     bottom: 0;
     width: 100%;
@@ -292,8 +291,7 @@ form {
 		background-color: #5e0921;
 	}
 	#banner {
-		height: 50px;
-        background-color: #FFF;
+		height: 100vh;
         top: 0px;
 	}
     #mobileBanner {
@@ -389,6 +387,7 @@ form {
 /*        position: fixed;*/
     }
     #info {
+        top: 20%;
         padding: 20px 20px;
         width: 300px;
         height: 270px;
