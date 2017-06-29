@@ -210,6 +210,8 @@ a:hover {
 	padding: 45px 0;
 	text-align: center;
 	font-size: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .sectionDiv {
     text-align: center;
@@ -246,7 +248,7 @@ a:hover {
 
 
 .carousel {
-/*    margin: 50px 0px;*/
+    margin: 50px 0px;
 }
 .carousel-inner {
     
@@ -278,7 +280,7 @@ a:hover {
 }
 
 #eboardPictures {
-    margin: 0% 15%;
+    margin: 0% -5%;
 }
 #imageWrapper {
 	position: relative;
@@ -462,15 +464,19 @@ iframe {
         margin-top: 300px;
         z-index: 100;
 	}
+    #eboardPictures {
+        margin: 0% -10%;
+    }
 	#eboard img {
 		width: 125px;
         height: 125px;
+        margin: 5px;
 	}
 	#nametag {
 		font-size: 15px;
 		width: 125px;
 		padding: 2px;
-		right: 10px;
+		right: 5px;
         transform: translateY(-23px);
 	}
 	#hiddenSpaces {
