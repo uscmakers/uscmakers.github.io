@@ -75,10 +75,12 @@ a {
 }
 
 #mobileLogo {
+    box-shadow: border-box;
 	display: none;
-	padding-top: 24px;
-	padding-right: 20px;
-	width: 150px;
+	margin-top: 24px;
+	margin-right: 30px;
+	width: 300px;
+    height: 100px;
 	float: right;
 }
 
@@ -94,6 +96,10 @@ a {
 	font-family: Aspira;
 	height: 100vh;
 }
+a:hover {
+    text-decoration: none;
+    color: white;
+}
 
 #nav {
     height: 66px;
@@ -107,7 +113,9 @@ a {
 	font-size: 20px;
 	color: black;
 }
-
+#returnButton {
+    text-decoration: none;
+}
 #nav img {
 	float: right;
 	padding-top: 13px;
@@ -115,6 +123,7 @@ a {
 }
 
 #nav ul {
+    padding-top: 19px;
 	list-style-type: none;
 	float: left;
 }
@@ -160,8 +169,10 @@ a {
 }
 
 #introLine img {
+/*
 	border-radius: 50%;
 	width: 250px;
+*/
 }
 
 #marquee {
@@ -224,16 +235,26 @@ a {
 	margin: auto;
 	font-size: 12%;
 	color: white;
+    align-content: center;
 }
 
-#about img {
-	border-radius: 20px;
-	width: 300px;
-	height: 250px;
-	object-fit: cover;
-	display: inline;
-	margin: 30px 10px;
+#aboutText {
+    font-size: 26px;
+    font-family: "Aspira Thin";
+    text-align: left;
 }
+
+
+.carousel {
+    margin: 50px 0px;
+}
+
+.emphasize {
+    color: #bc0b34;
+    font-family: "Aspira Bold";
+/*    background-color: white;*/
+}
+
 
 #eboard {
 	text-align: center;
@@ -245,11 +266,15 @@ a {
 
 #eboard img {
 	display: inline;
-	width: 200px;
-	border-radius: 50%;
-	padding: 20px 40px;
+	width: 220px;
+    height: 220px;
+/*	border-radius: 50%;*/
+	margin: 10px;
 }
 
+#eboardPictures {
+    margin: 0px -10%;
+}
 #imageWrapper {
 	position: relative;
 	width: 240px;
@@ -258,18 +283,34 @@ a {
 }
 
 #nametag {
-	opacity: 0.9;
-	background-color: gray;
-	font-size: 15px;
+    width: 220px;
+	opacity: 0.85;
+	background-color: #000;
 	position: absolute;
-	bottom: 10px;
-	right: 50%;
-	padding: 5px;
+    padding: 5px;
+    text-align: right;
+    right:10px;
+    top: 61px;
+}
+
+.eboardName {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 3px 3px 3px black;
+    
+}
+
+.eboardPosition {
+    font-size: 14px;
+    color: #bc0b34;
+    font-family: "Aspira Thin";
+    text-shadow: 0px 0px 3px black;
+    text-transform: uppercase;
 }
 
 footer {
 	font-size: 15px;
-	background: #AAA;
+	background: #DDD;
 	color: #910b3a;
     height: 70px;
     margin: auto;
@@ -361,7 +402,7 @@ iframe {
 	}
 	#banner {
 		height: 50px;
-        background-color: #000;
+        background-color: #5e0921;
         top: 0px;
 	}
     #mobileBanner {
@@ -377,11 +418,10 @@ iframe {
         height: 27px;
         width: 80px;
         margin-top: 11px;
-        padding-top: 0px;
         margin-left: 11px;
         margin-bottom: 11px;
         margin-right: 6px;
-        right: 0px;
+        right: 6px;
         z-index: 900;
         position: absolute;
 	}
@@ -401,15 +441,24 @@ iframe {
 		display: block;
 	}
 	#about img {
+/*
 		width: 80%;
 		float: none;
 		padding: 0;
 		margin: 0 10%;
 		margin-bottom: 30px;
+*/
+
 	}
+    #aboutText {
+        font-size: 20px;
+    }
 	#introLine {
 		display: none;
 	}
+    .emphasize {
+        font-size: 20px;
+    }
 	.sectionHeader {
 		padding: 30px 0px;
         
@@ -420,12 +469,14 @@ iframe {
 	}
 	#eboard img {
 		width: 125px;
+        height: 125px;
 	}
 	#nametag {
 		font-size: 15px;
-		width: 100px;
+		width: 125px;
 		padding: 2px;
-		right: 20%;
+		right: 10px;
+        transform: translateY(-23px);
 	}
 	#hiddenSpaces {
 		display: block;
@@ -530,6 +581,14 @@ iframe {
     #cciLogo {
         width: 300px;
     }
+    .eboardName {
+        font-size: 14px;
+    }
+    .eboardPosition {
+        text-transform: none;
+        font-size: 11px;
+    }
+
 }
 
 

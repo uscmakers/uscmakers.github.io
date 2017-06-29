@@ -2,6 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 	<title>Makers at USC</title>
 	<link rel="stylesheet" href="main.css" type="text/css"/>
 	<link rel="icon" href="images/icon.png"/>
@@ -29,8 +33,8 @@
         <div id="opaqueLayer"></div>
         <div id="groupPic"></div>
 		<header id="nav" class="nav-down">
-		<div id="homeButton"><a href="http://www.usc.edu/"><img src="images/usclogo.png"></a></div>
-			<ul>
+		<div id="homeButton" align="middle"><a href="http://www.usc.edu/"><img src="images/usclogo.png"></a></div>
+			<ul align="center">
 				<li id="returnButton"><a href="index.html">Home</a></li>
 				<li id="projectsButton"><a href="projects.html">Teams</a></li>
                 <li id="eventsButton"><a href="events.html">Gallery</a></li>
@@ -46,29 +50,59 @@
 	<div id="content">
 		<div id="about">
 		<div id="firstSectionHeader" class="sectionHeader">We are the tinkerers of USC.</div>
-			Makers is USC's premier electrical engineering organization. From wearables to logic circuits, we provide our members with the knowledge, materials and connections to make amazing things.<br><br>
-			Our members work in teams to create diverse, interesting projects each semester. We offer weekly meetings, regular workshops on skills such as Arduino and Internet of Things, company seminars, networking opportunities, fun retreats, and other social events!<br><br>
-            <a href="http://cci.usc.edu">Sponsored by CCI, the USC Viterbi Center for Cyber-Physical Systems and the Internet of Things</a><br>
-            <div id="hiddenSpaces"><br><br></div>
-			<img src="images/groupphoto.jpg">
-			<img src="images/seminar.jpg">
-			<img src="images/magicmirror.jpg"><br><br>
-			Check out this USC Viterbi Voices video featuring Makers at USC!<br><br>
-			<iframe style="padding-bottom: 40px" src="https://www.youtube.com/embed/hbllxhLajqw?rel=0" frameborder="0" allowfullscreen></iframe>
+            <p id="aboutText">
+                Makers is USC's premier electrical engineering organization. Our members work together in teams to propose, plan, and build various projects each semester, from wearables to logic circuits. We provide our members with the knowledge, resources, and connections to create these gadgets. Through our regular <b class="emphasize">workshops</b>, company <b class="emphasize">seminars</b>, and <b class="emphasize">networking</b> events, members have an opportunity to develop technical skills and make valuable professional connections. We also foster a tight-knit <b class="emphasize">community</b> of engineers by hosting fun retreats and other social events.
+                <br><br>
+                <a href="http://cci.usc.edu" >Sponsored by CCI, the USC Viterbi Center for Cyber-Physical Systems and the Internet of Things</a>
+            </p>
+
+            <div class="carousel slide" data-ride="carousel" id="featured">
+                <ol class="carousel-indicators">
+                    <li data-target="#featured" data-slide-to="0" class="active"></li>
+                    <li data-target="#featured" data-slide-to="1"></li>
+                    <li data-target="#featured" data-slide-to="2"></li>
+                    <li data-target="#featured" data-slide-to="3"></li>
+                    <li data-target="#featured" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="aboutImage" src="images/groupphoto.jpg">
+                    </div>
+                    <div class="item">
+                        <img class="aboutImage" src="images/seminar.jpg">
+                    </div>
+                    <div class="item">
+                        <img class="aboutImage" src="images/carousel_photo_3.jpeg">
+                    </div>
+                    <div class="item">
+                        <img class="aboutImage" src="images/carousel_photo_4.JPG">
+                    </div>
+                    <div class="item">
+                        <img class="aboutImage" src="images/magicmirror.jpg">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#featured" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
 		</div>
 		<div id="eboard">
 		<div class="sectionHeader">Meet our E-Board</div>
-			<div>
-				<div id="imageWrapper"><img src="images/yutong.jpg"><span id="nametag">Yutong Gu<br>President</span></div>
-				<div id="imageWrapper"><img src="images/shivangi.jpg"><span id="nametag">Shivangi Agarwal<br>Director of Membership</span></div>
-				<div id="imageWrapper"><img src="images/eric.jpg"><span id="nametag">Eric Liu<br>Co-director of Programming</span></div>
-				<div id="imageWrapper"><img src="images/gautam.jpg"><span id="nametag">Gautam Jethwani<br>Co-director of Programming</span></div>
-                <div id="imageWrapper"><img src="images/krishna.jpg"><span id="nametag">Krishna Gopal<br>Director of Marketing</span></div>
-				<div id="imageWrapper"><img src="images/nishir.jpg"><span id="nametag">Nishir Shelat<br>Director of Events</span></div>
-				<div id="imageWrapper"><img src="images/lucia.jpg"><span id="nametag">Lucia Zhang<br>Associate Director of Events</span></div>
-				<div id="imageWrapper"><img src="images/myrl.jpg"><span id="nametag">Myrl Marmarelis<br>Director of Outreach</span></div>
-				<div id="imageWrapper"><img src="images/daniel.jpg"><span id="nametag">Daniel Koo<br>Director of Finance</span></div>
-				<div id="imageWrapper"><img src="images/allan.png"><span id="nametag">Allan Weber<br>Faculty Advisor</span></div>
+			<div id="eboardPictures">
+                <div id="imageWrapper"><img src="images/yutong.jpg"><span id="nametag"><div class="eboardName">Yutong Gu</div><div class="eboardPosition">President</div></span></div>
+				<div id="imageWrapper"><img src="images/shivangi.jpg"><span id="nametag"><div class="eboardName">Shivangi Agarwal</div><div class="eboardPosition">Director of Membership</div></span></div>
+				<div id="imageWrapper"><img src="images/eric.jpg"><span id="nametag"><div class="eboardName">Eric Liu</div><div class="eboardPosition">Co-director of Programming</div></span></div>
+				<div id="imageWrapper"><img src="images/gautam.jpg"><span id="nametag"><div class="eboardName">Gautam Jethwani</div><div class="eboardPosition">Co-director of Programming</div></span></div>
+                <div id="imageWrapper"><img src="images/krishna.jpg"><span id="nametag"><div class="eboardName">Krishna Gopal</div><div class="eboardPosition">Director of Marketing</div></span></div>
+				<div id="imageWrapper"><img src="images/nishir.jpg"><span id="nametag"><div class="eboardName">Nishir Shelat</div><div class="eboardPosition">Director of  Events</div></span></div>
+				<div id="imageWrapper"><img src="images/lucia.jpg"><span id="nametag"><div class="eboardName">Lucia Zhang</div><div class="eboardPosition">Associate Director of Events</div></span></div>
+				<div id="imageWrapper"><img src="images/myrl.jpg"><span id="nametag"><div class="eboardName">Myrl Marmarelis</div><div class="eboardPosition">Director of Outreach</div></span></div>
+				<div id="imageWrapper"><img src="images/daniel.jpg"><span id="nametag"><div class="eboardName">Daniel Koo</div><div class="eboardPosition">Director of Finance</div></span></div>
+				<div id="imageWrapper"><img src="images/allan.png"><span id="nametag"><div class="eboardName">Allan Weber</div><div class="eboardPosition">Faculty Advisor</div></span></div>
 			</div>
 		</div>
 	</div>
@@ -93,8 +127,10 @@
                 
             </span>
         </div>
-    </footer>
+    </footer>    
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="script.js"></script>
 </html>
