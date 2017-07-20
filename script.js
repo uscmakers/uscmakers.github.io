@@ -43,7 +43,7 @@ $("#hamburgerMenu").on("click",
 });
 
 function check(form) {
-    if(form.username.value == "makersiscool" && form.password.value == "krishnaiscool")
+    if(form.password.value == "reallyhardtoguess")
     {
         window.open('secretpage.html', '_self');
     }

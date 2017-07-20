@@ -235,6 +235,9 @@ form {
     color: #000;
 }
 
+#usernameinput {
+    display: none;
+}
 ::placeholder {
     color: #777;
 }
