@@ -178,20 +178,6 @@ a:hover {
 
 }
 
-.btn {
-    background-color: #5e0921;
-    border-color: #5e0921;
-}
-
-.btn:hover {
-    background-color: #5e0921;
-    border-color: #5e0921;
-}
-
-.btn:click {
-    background-color: #5e0921;
-}
-
 #menuButton {
 	display: none;
 	position: absolute;
@@ -233,7 +219,7 @@ a:hover {
 	color: #444;
 }
 #modalLabel {
-    color: #5e0921;
+    color: #fff;
 }
 
 #projectContent img {
@@ -365,6 +351,14 @@ iframe {
 }
 .close {
     font-size: 50px;
+    color: white;
+    opacity: .80;
+}
+.close:hover {
+    color: #bbb;
+}
+.modal-header {
+    background-color: #5e0921;
 }
 @media screen and (max-width: 800px) {
 	body {
