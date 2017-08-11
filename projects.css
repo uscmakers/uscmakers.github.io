@@ -543,4 +543,10 @@ iframe {
         animation-duration: 1s;
         font-size: 30%;
     }
+    .teamName {
+        font-size: 130%;
+    }
+    .memberNames {
+        font-size: 70%;
+    }
 }
