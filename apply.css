@@ -272,6 +272,15 @@ footer {
 #appDeadline {
     font-size: 70%;
 }
+
+#rsvpLink:hover {
+    color: #444;
+}
+
+#rsvpLink {
+    color: #888;
+}
+
 iframe {
     width: 560px;
     height: 315px;
