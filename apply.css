@@ -281,6 +281,20 @@ footer {
     color: #888;
 }
 
+#facebookInfo {
+    font-size: 125%;
+    
+}
+
+#facebookLink {
+    text-decoration: underline;
+    color: #aaa;
+}
+
+#facebookLink:hover {
+    color: #910b3a;
+}
+
 iframe {
     width: 560px;
     height: 315px;
