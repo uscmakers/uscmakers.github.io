@@ -303,7 +303,7 @@ iframe {
 }
 
 .eventName {
-    font-size: 30px;
+    font-size: 42px;
     color: #888;
     text-align: center;    
 }
@@ -311,8 +311,8 @@ iframe {
 div.details {
     color: #fff;
     width: 100%;
+    font-size: 28px;
 }
-
 .events {
     text-align: center;
 }
