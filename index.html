@@ -1,138 +1,358 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css" type="text/css"/>
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-	<title>Makers at USC</title>
-	<link rel="stylesheet" href="main.css" type="text/css"/>
-	<link rel="icon" href="images/icon.png"/>
-	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-	<div id="backgroundWrapper">
-   <video id="backgroundVideo" src="images/Home/bg.mp4" autoplay loop class="centered"></video></div>
-	<div id="banner">
-        <div id="mobileBanner">
-        <img src="images/new_hamburger_menu.png" id= "hamburgerMenu">
-		<a href="http://www.usc.edu/"><img id="mobileLogo" src="images/mobile_logo.png"></a></div>
-        <div class="mobileMenu"></div>
-            <ul class="mobileMenu">
-                <li class="mobileMenu"><a href="index.html">HOME</a></li>
-                <li class="mobileMenu"><a href="projects.html">TEAMS</a></li>
-                <li class="mobileMenu"><a href="events.html"> GALLERY</a></li>
-                <li class="mobileMenu"><a href="https://www.facebook.com/uscmakers/">CONTACT</a></li>
-                <li class="mobileMenu"><a href="apply.html">APPLY</a></li>
-                <li class="mobileMenu"><a href="login.html"> LOGIN</a></li>
-            </ul>
-        
-        <img src="images/logo_white.png" id="makersLogoMobile">
-        <div id="opaqueLayer"></div>
-        <div id="groupPic"></div>
-		<header id="nav" class="nav-down">
-		<div id="homeButton" align="middle"><a href="http://www.usc.edu/"><img src="images/usclogo.png"></a></div>
-			<ul align="center">
-				<li id="returnButton"><a href="index.html">Home</a></li>
-				<li id="projectsButton"><a href="projects.html">Teams</a></li>
-                <li id="eventsButton"><a href="events.html">Gallery</a></li>
-				<li id="contactusButton"><a href="https://www.facebook.com/uscmakers/">Contact</a></li>
-				<li id="joinusButton"><a href="apply.html">Apply</a></li>
-                <li id="loginButton"><a href="login.html">Login</a></li>
-			</ul>
-		</header>
-		<div id="introLine" class="centered">
-			MAKERS<div id="marquee">at USC</div>
-		</div>
-	</div>
-	<div id="content">
-		<div id="about">
-		<div id="firstSectionHeader" class="sectionHeader">We are the tinkerers of USC.</div>
-            <p id="aboutText">
-                Makers was started in the Fall of 2016 by three engineering students at the University of Southern California as an effort to promote more innovation and interest in electronics on campus. The mission of Makers is to facilitate the exploration of concepts in electronics design and stimulate interest in fields of electronics such as the Internet of Things, Embedded Systems, and Robotics. The organization hopes to serve as a resource for its community by offering its assistance with electronics-related projects and hosting workshops that are open to the general public. Starting in the Fall of 2017, we will be making our workshop series open to the public to further our mission of generating interest in electronics.
-                <br><br>
-                Since its inception, Makers has expanded its membership to 25+ students by emphasizing community and growth through learning. Our members have the opportunity to join a team (or start their own) and devise a project that they will work on until completion. Teams are given a certain amount of funding each semester to spend on their project. We also have semesterly retreats and social activities for our members to bond and escape their work because we believe it is crucial for our members to be able to rely on each other, academically or otherwise, and build long term friendships within our organization. Benefits of membership also include higher changes for job opportunities, industry talks from tech-companies, and an excellent community that will support you in all your endeavors. 
+<html lang="en">
 
-                <br><br>
-                <a href="http://cci.usc.edu" >Sponsored by CCI, the USC Viterbi Center for Cyber-Physical Systems and the Internet of Things</a>
-            </p>
-            
-            <div class="carousel slide" data-ride="carousel" id="featured">
-                <ol class="carousel-indicators">
-                    <li data-target="#featured" data-slide-to="0" class="active"></li>
-                    <li data-target="#featured" data-slide-to="1"></li>
-                    <li data-target="#featured" data-slide-to="2"></li>
-                    <li data-target="#featured" data-slide-to="3"></li>
-                    <li data-target="#featured" data-slide-to="4"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img class="aboutImage" src="images/Home/carousel_photo_1.jpg">
-                    </div>
-                    <div class="item">
-                        <img class="aboutImage" src="images/Home/carousel_photo_2.jpg">
-                    </div>
-                    <div class="item">
-                        <img class="aboutImage" src="images/Home/carousel_photo_3.jpeg">
-                    </div>
-                    <div class="item">
-                        <img class="aboutImage" src="images/Home/carousel_photo_4.JPG">
-                    </div>
-                    <div class="item">
-                        <img class="aboutImage" src="images/Home/carousel_photo_5.jpg">
-                    </div>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MAKERS at USC</title>
+    <link rel="icon" href="img/icon.png"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gruppo|Halant|Quicksand|Josefin+Sans:300" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">MAKERS</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#eboard">Eboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <br/><br/><br/>
+          <br/><br/><br/>
+          <br/><br/><br/>
+          <br/><br/><br/>
+          <br/><br/><br/>
+          <h1 class="mx-auto my-0 text-uppercase">MAKERS</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5" style="font-size: 2em; font-color: #eee">A USC VITERBI CLUB</h2>
+          <a href="https://makers3.typeform.com/to/AinVIz" class="btn btn-primary js-scroll-trigger">APPLY NOW</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4">THE MAKERS MISSION</h2>
+            <p class="text-white-50">Makers was started in the Fall of 2016 by three engineering students at the University of Southern California
+              as an effort to promote more innovation and interest in electronics on campus. The mission of Makers is to facilitate the exploration
+              of concepts in electronics design and stimulate interest in fields of electronics such as the Internet of Things, Embedded Systems, and
+              Robotics. The organization hopes to serve as a resource for its community by offering its assistance with electronics-related projects and
+              hosting workshops that are open to the general public.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="eboard" class="projects-section bg-black">
+      <div class="container">
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5 bg-black" style="min-height: 100%; min-width: 100%;">
+            <div class="row eboard-img-row" style="width: 100%">
+              <div class="col-sm-3 eboard-img-col">
+                <div class="featured-text text-center text-lg-left" style="text-align: center;">
+                  <h4 style="color: white; padding-top: 1.25em;">EXECUTIVE BOARD</h4>
+                  <p class="text-white-50 mb-0">MAKERS has a dedicated eboard focused on delivering the best experience for MAKERS members, and to foster a fun and productive environment</p>
                 </div>
-                <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#featured" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+              </div>
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="eric"><div class="eboard-text"><h1>Eric</h1><h5 style="color:#888">Co-President</h5></div></div></div>
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="shivangi"><div class="eboard-text"><h1>Shivangi</h1><h5 style="color:#888">Co-President</h5></div></div></div>
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="myrl"><div class="eboard-text"><h1>Myrl</h1><h5 style="color:#888">Director of Membership</h5></div></div></div>
             </div>
-
-		</div>
-		<div id="eboard">
-		<div class="sectionHeader">Meet our E-Board</div>
-			<div id="eboardPictures">
-                <div id="imageWrapper"><img src="images/Home/eboard/yutong.jpg"><span id="nametag"><div class="eboardName">Yutong Gu</div><div class="eboardPosition">President</div></span></div>
-				<div id="imageWrapper"><img src="images/Home/eboard/shivangi.jpg"><span id="nametag"><div class="eboardName">Shivangi Agarwal</div><div class="eboardPosition">Director of Membership</div></span></div>
-				<div id="imageWrapper"><img src="images/Home/eboard/eric.jpg"><span id="nametag"><div class="eboardName">Eric Liu</div><div class="eboardPosition">Co-director of Programming</div></span></div>
-				<div id="imageWrapper"><img src="images/Home/eboard/gautam.jpg"><span id="nametag"><div class="eboardName">Gautam Jethwani</div><div class="eboardPosition">Co-director of Programming</div></span></div>
-                <div id="imageWrapper"><img src="images/Home/eboard/krishna.jpg"><span id="nametag"><div class="eboardName">Krishna Gopal</div><div class="eboardPosition">Director of Marketing</div></span></div>
-				<div id="imageWrapper"><img src="images/Home/eboard/nishir.jpg"><span id="nametag"><div class="eboardName">Nishir Shelat</div><div class="eboardPosition">Director of  Events</div></span></div>
-				<div id="imageWrapper"><img src="images/Home/eboard/lucia.jpg"><span id="nametag"><div class="eboardName">Lucia Zhang</div><div class="eboardPosition">Associate Director of Events</div></span></div>
-				<div id="imageWrapper"><img src="images/Home/eboard/myrl.jpg"><span id="nametag"><div class="eboardName">Myrl Marmarelis</div><div class="eboardPosition">Director of Outreach</div></span></div>
-				<div id="imageWrapper"><img src="images/Home/eboard/daniel.jpg"><span id="nametag"><div class="eboardName">Daniel Koo</div><div class="eboardPosition">Director of Finance</div></span></div>
-				<div id="imageWrapper"><img src="images/Home/eboard/allan.png"><span id="nametag"><div class="eboardName">Allan Weber</div><div class="eboardPosition">Faculty Advisor</div></span></div>
-			</div>
-		</div>
-	</div>
-    <div class="sectionDiv">
-        <div id="sponsorInfo" class="sectionHeader">
-            <p><br>Thank You to Our Sponsors!<br><br></p>
-        <div id="sponsorLogos">
-            <a href="http://cci.usc.edu"><img id="cciLogo" src="images/cci_logo.jpg" align="middle"></a>
-            <a href="http://mhi.usc.edu"><img id="mhiLogo" src="images/mhi_logo.png" align="middle"></a> 
+            <div class="row eboard-img-row" style="width: 100%">
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="ben"> <div class="eboard-text"><h1>Ben</h1><h5 style="color:#888">Co-Director of Programming</h5></div></div></div>
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="eric2"> <div class="eboard-text"><h1>Eric</h1><h5 style="color:#888">Co-Director of Programming</h5></div></div></div>
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="gautam"> <div class="eboard-text"><h1>Gautam</h1><h5 style="color:#888">Director of Events</h5></div></div></div>
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="lucia"> <div class="eboard-text"><h1>Lucia</h1><h5 style="color:#888">Assist. Director of Events</h5></div></div></div>
+            </div>
+            <div class="row eboard-img-row" style="width: 100%">
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="kevin"> <div class="eboard-text"><h1>Kevin</h1><h5 style="color:#888">Director of Finance</h5></div></div></div>
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="nishir"> <div class="eboard-text"><h1>Nishir</h1><h5 style="color:#888">Director of Outreach</h5></div></div></div>
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="radhika"> <div class="eboard-text"><h1>Radhika</h1><h5 style="color:#888">Assist. Director of Outreach</h5></div></div></div>
+              <div class="col-sm-3 eboard-img-col"><div class="eboard-img" id="adithya"> <div class="eboard-text"><h1>Adithya</h1><h5 style="color:#888">Director of Marketing</h5></div></div></div>
+            </div>
         </div>
-            <p id="sponsorMessage"><i>Interested in sponsoring Makers? Contact us at uscmakers@gmail.com.<br><br></i></p>
-    </div>
-    </div>
-    <footer>
-        <div class="footerContent">
-            <span id="makersCopyright">Makers at USC &copy; 2017</span>
-            <span id="socialMediaLogos">
-                <a href="https://facebook.com/uscmakers"><img align="center" class="footerLogo" src="images/facebook_logo.png"></a>
-                
-                <a href=https://www.instagram.com/USCmakers><img align="center" class="footerLogo" src="images/instagram_logo.png"></a>
-                
-            </span>
-        </div>
-    </footer>    
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+      </div>
+    </section>
 
-<script type="text/javascript" src="script.js"></script>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-black">
+      <div class="container">
+        <h1 class="text-white mb-4 featured-text">FEATURED PROJECTS</h1>
+          <!-- Project Two Row -->
+          <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="img/project-pictures/tiki_photo1.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text w-100 my-auto text-center text-lg-left" style="padding: 1em; padding-left: 4em;">
+                    <h4 class="text-white">TIKI TOWN</h4>
+                    <p class="mb-0 text-white-50"> Tiki Town is enhancing the ordinary sleep mask to detect, analyze, and make decisions to achieve this task. Our sleeping mask is designed to be a compliment to a standard alarm clock. When a user enters light sleep, where they are more prone to movement, our sleeping mask will detect it and notify our phone app via Bluetooth. The app will then determine whether or not to wake the user up based on the current time and the time they had set to wake. When the time comes, the sleeping mask will activate a series of LEDs, set to any color of the users choosing. The light will trick the user's brain into thinking that it is daylight outside, which will allow the user to wake to up more easily and feel more refreshed when the alarm sounds. With this mask, we hope to elevate the sleep experience and improve overall productivity.</p>
+                    <hr class="d-none d-lg-block mb-0 ml-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Two Row -->
+          <div class="row justify-content-center no-gutters">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="img/project-pictures/4.5+1_photo3.png" alt="" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-lg-6 order-lg-first">
+              <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text w-100 my-auto text-center text-lg-right">
+                    <h4 class="text-white">4.5 + 1</h4>
+                    <p class="mb-0 text-white-50">Our team, 4.5 +1, made a pair of gloves that allow for typing on any kind of surface. Inspired by individuals with disabilities, we wanted to make typing come off the keyboard and onto anywhere you can lay your hands on. Using pressure sensors, gloves, and a Bluetooth-enabled microcontroller, finger presses are sent to a raspberry pi where text typed is converted to speech outputted on a speaker.</p>
+                    <hr class="d-none d-lg-block mb-0 mr-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Two Row -->
+          <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="img/project-pictures/squadcopter_photo4.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text w-100 my-auto text-center text-lg-left">
+                    <h4 class="text-white">SQUADCOPTER</h4>
+                    <p class="mb-0 text-white-50">Squadcopter has spent the duration of the semester constructing a quadcopter. This quadcopter possesses the ability of 4 channel flight as well as a self-leveling feature that analyzes its flight pattern and make appropriate adjustments to remain leveled by utilizing an MPU 6050 gyro. Our quadcopter was controlled through an Arduino Uno and made use of several components including but not limited to motors, ESCs, transmitter/receiver, and a Lithium Polymer battery.</p>
+                    <hr class="d-none d-lg-block mb-0 ml-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Two Row -->
+          <div class="row justify-content-center no-gutters">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="img/project-pictures/sam_photo.jpg" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-first">
+              <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text w-100 my-auto text-center text-lg-right">
+                    <h4 class="text-white">SAM</h4>
+                    <p class="mb-0 text-white-50">SAM constructed a device that allows users to remotely play with their pets. By accessing a website that livestreams a camera feed on the device, users can click a button to trigger the fetch process. A motor then catapults a tennis ball across the room for a dog to chase after. The dog can then put the ball back into the automatic loading device to allow for continuous play from afar.</p>
+                    <hr class="d-none d-lg-block mb-0 mr-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Two Row -->
+          <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="img/project-pictures/bits_photo2.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text w-100 my-auto text-center text-lg-left">
+                    <h4 class="text-white">BITS PLEASE</h4>
+                    <p class="mb-0 text-white-50">This semester, Bits Please created a sentry gun that uses a camera and computer vision to detect human bodies to determine whether or not to fire the automatic nerf gun that we rewired. We used the Pi to run OpenCV and control the Nerf Elite HyperFire Blaster by reconnecting wires from the circuit boards in the gun to the GPIO pins of our Pi.</p>
+                    <hr class="d-none d-lg-block mb-0 ml-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Two Row -->
+          <div class="row justify-content-center no-gutters">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="img/project-pictures/terrah_photo1.jpg" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-first">
+              <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text w-100 my-auto text-center text-lg-right">
+                    <h4 class="text-white">TERRAH 2.0</h4>
+                    <p class="mb-0 text-white-50">Terrah 2.0 spent the year designing a smart watering system. We use a moisture sensor to detect when a plant needs more water and if the moisture level drops to a certain threshold we set, a pump pushes more water into the plant until the water reaches the desired saturation. The inspiration for this project came from the desire to create a device to help avoid water wastage.</p>
+                    <hr class="d-none d-lg-block mb-0 mr-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Two Row -->
+          <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="img/project-pictures/wheel_photo2.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text w-100 my-auto text-center text-lg-left">
+                    <h4 class="text-white">WHEEL OF MISFORTUNE</h4>
+                    <p class="mb-0 text-white-50">Wheel of Misfortune spent the year prototyping a 2-wheeled, self-balancing inverted pendulum robot. We put a lot of work into interfacing with and controlling brushless DC motors, as this is the type of motor seen in large hub motors for rideable self-balancing unicycles. The robot collects data from an accelerometer and a gyroscope, and by filtering these two sensor inputs with a PID loop we can approximate the angle of the robot.</p>
+                    <hr class="d-none d-lg-block mb-0 ml-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Two Row -->
+          <div class="row justify-content-center no-gutters">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="img/project-pictures/viterbaes_photo.jpg" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-first">
+              <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text w-100 my-auto text-center text-lg-right" style="padding: 1em; padding-right: 5em;">
+                    <h4 class="text-white">VITERBAES</h4>
+                    <p class="mb-0 text-white-50">Baemax is an IoT-based, personal health care companion on the Amazon Alexa intended to provide a user with an easy to use platform capable of dealing with any and all health-related issues they may have. Currently, Baemax has the ability to provide a basic diagnosis when given a set of symptoms, using the Symptom Checker API. Additionally, by pulling data from an iOS application on the user’s iPhone, Baemax can track sleeping data, and monitor activity levels. Baemax exists as a one stop destination for all general health care needs, thus making the overall user experience efficient and enjoyable. </p>
+                    <hr class="d-none d-lg-block mb-0 mr-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Two Row -->
+          <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="img/project-pictures/wagyu_photo2.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text w-100 my-auto text-center text-lg-left" style="padding: 1em; padding-left: 3em;">
+                    <h4 class="text-white">WAGYU WEDNESDAY</h4>
+                    <p class="mb-0 text-white-50"> Wagyu Wednesday built a speaker system that could take input via Bluetooth or an AUX cable. We used a class D amplifier which makes the system very power efficient why maintaining relatively good quality sound. This project also required a lot of filters which would get rid of unintentional and inaudible frequencies.</p>
+                    <hr class="d-none d-lg-block mb-0 ml-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="signup-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto text-center" >
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <h3 class="text-uppercase m-0">A Huge Thank You To Our Sponsors</h2>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <img src="./img/sponsors/cci_logo.jpg" alt="" style="height:5em; margin: 1em; margin-left: 1.5em;"/>
+                  <img src="./img/sponsors/mhi_logo.png" alt="" style="height:5em; margin: 1em; margin-right: 1.5em;"/>
+                  <img src="./img/sponsors/usclogo.png" alt=""style="height:5em; margin: 1em; margin-top: 2em;"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section bg-black" id="contact">
+      <div class="container">
+        <h1 class="text-white mb-4 featured-text">CONTACT US</h1>
+        <div class="row">
+
+          <div class="col-md-6 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2"></i>
+                <h3 class="text-uppercase m-0">EMAIL US</h2>
+                  <br/>
+                <h6>uscmakers@gmail.com</h6>
+                <hr class="my-4">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-edit text-primary mb-2"></i>
+                <a href="https://makers3.typeform.com/to/AinVIz">
+                <h3 class="text-uppercase m-0">APPLY NOW!</h3>
+                <hr class="my-4">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Copyright &copy; MAKERS 2018
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/font-awesome/js/all.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+
 </html>
