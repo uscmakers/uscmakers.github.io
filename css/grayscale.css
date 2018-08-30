@@ -84,16 +84,11 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.4) 75%, #161616 100%), url("../img/makers-experimentation-masthead-5.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
 }
 
 .masthead h1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 6rem;
+  font-size: 3.5rem;
   letter-spacing: 1.2rem;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
   -webkit-text-fill-color: transparent;
@@ -106,9 +101,30 @@
 }
 
 @media (min-width: 768px) {
-  .masthead h1 {
-    font-size: 6rem;
-    line-height: 6rem;
+  .masthead {
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.4) 75%, #161616 100%), url("../img/makers-experimentation-masthead-6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  #masthead-topmargin {
+    margin-top: 20em;
+  }
+}
+
+@media (max-width: 767px) {
+  .masthead {
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.4) 75%, #161616 100%), url("../img/makers-experimentation-masthead-5-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  #masthead-topmargin {
+    margin-top: 12em;
   }
 }
 
@@ -158,12 +174,28 @@
 .about-section {
   padding-top: 10rem;
   padding-bottom: 25rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.05) 75%, rgba(22, 22, 22, 0.02) 100%), url("../img/overview-3-values-experimentation.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.05) 75%, rgba(22, 22, 22, 0.02) 100%), url("../img/overview-3-values-experimentation.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-section {
+    background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.05) 75%, rgba(22, 22, 22, 0.02) 100%), url("../img/no-3-values.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-size: cover;
+  }
 }
 
 .about-section p {
