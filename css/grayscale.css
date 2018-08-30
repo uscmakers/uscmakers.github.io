@@ -173,7 +173,6 @@
 
 .about-section {
   padding-top: 10rem;
-  padding-bottom: 25rem;
 }
 
 @media (min-width: 768px) {
@@ -184,6 +183,7 @@
     background-attachment: scroll;
     background-size: cover;
     background-size: cover;
+    padding-bottom: 25rem;
   }
 }
 
@@ -195,6 +195,7 @@
     background-attachment: scroll;
     background-size: cover;
     background-size: cover;
+    padding-bottom: 10rem;
   }
 }
 
