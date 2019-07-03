@@ -373,72 +373,8 @@ footer {
   font-size: 1.25em;
 }
 
-#eric {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/eric.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-#shivangi {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/shivangi.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-#myrl {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/myrl.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
 #ben {
   background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/ben.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-#eric2 {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/eric2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-#gautam {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/gautam.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-#lucia {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/lucia.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-#kevin {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/kevin.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-#nishir {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/nishir.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -453,8 +389,64 @@ footer {
   background-attachment: scroll;
 }
 
+#nishir {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/nishir.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
 #adithya {
   background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/adithya.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#teyva {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/teyva.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#anjan {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/anjan.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#shivani {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/shivani.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#jenny {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/jenny.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#delara {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/delara.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#elaine {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/elaine.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
