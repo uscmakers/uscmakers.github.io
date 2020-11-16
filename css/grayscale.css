@@ -515,4 +515,19 @@ footer {
   background-attachment: scroll;
 }
 
+#rob {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/random/rob.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#ray {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/random/ray.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
 
