@@ -587,3 +587,11 @@ footer {
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
+
+#ros {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/tutorial-thumbnails/ros.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
