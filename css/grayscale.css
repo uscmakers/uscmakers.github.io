@@ -595,3 +595,7 @@ footer {
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
+
+.dropdown-item:hover {
+  background-color: #333333F0;
+}
