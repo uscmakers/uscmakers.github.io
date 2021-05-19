@@ -114,6 +114,42 @@
   }
 }
 
+.chess-head {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+}
+
+.chess-head h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 5.5rem;
+  letter-spacing: 1.2rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.chess-head h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .chess-head {
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.4) 75%, #161616 100%), url("../img/wizard.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  #chess-topmargin {
+    margin-top: 10em;
+  }
+}
+
 @media (max-width: 767px) {
   .masthead {
     background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.4) 75%, #161616 100%), url("../img/makers-experimentation-masthead-5-mobile.jpg");
