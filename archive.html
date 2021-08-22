@@ -46,10 +46,16 @@
               <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#proj1">2019-20 Projects</a>
+                <a class="nav-link js-scroll-trigger" href="#F20Pr">Fall 2020 Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#proj2">2018-19 Projects</a>
+                <a class="nav-link js-scroll-trigger" href="#F20GB">Fall 2020 Guided Builds </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#S20Pr">Spring 2020 Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#1819Pr">2018-19 Projects</a>
             </li>
           </ul>
         </div>
@@ -64,18 +70,235 @@
           <br>
           <h1 class="mx-auto my-0 text-uppercase" >MAKERS</h1>
           <br>
-          <br>
-          <a href="https://www.youtube.com/watch?v=EWFlrLriMJ8&list=PLIuGhoAfMDX14mnqWyGxV6pA-QST_bQh1" class="btn btn-primary js-scroll-trigger">FALL 20 SHOWCASE RECORDINGS</a>
+          
         </div>
 
       </div>
     </header>
 
-<!-- Current Projects Section -->
-    <section id="proj1" class="projects-section bg-black">
+<!-- FALL 2020 PROJECTS -->
+<section id="F20Pr" class="projects-section bg-black">
+    <div class="container">
+      <h1 class="text-white mb-4 featured-text">FALL 2020 PROJECTS</h1>
+      <a href="https://www.youtube.com/watch?v=EWFlrLriMJ8&list=PLIuGhoAfMDX14mnqWyGxV6pA-QST_bQh1" class="btn btn-primary js-scroll-trigger">FALL 2020 SHOWCASE RECORDINGS</a>
+      <br>
+      <br>  
+        <!-- Project 1 Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/project-pictures/MaskLock.JPG" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left" style="padding: 1em; padding-left: 4em;">
+                  <h4 class="text-white">MASK OFF</h4>
+                  <p class="mb-0 text-white-50">MASK OFF is a  smart mask detecting system that keeps the anti-maskers away! Our device uses computer vision to detect a mask on someone's face, and consequently unlocks or locks the door to your establishment. It works on everyone, from your neighborhood Karens to your neighborhood dogs. MASK OFF implements a face mask detection model that prevents non-maskers from entering a unit. All a user has to do is press a button, and based on whether our camera detects a mask or not, a signal is sent to a raspberry pi that unlocks a door. We initially implemented an open source neural network model using Keras and Tensorflow. Then, we integrated the model with the raspberry pi in order to have a button set off the unlocking signal.</p>
+                  <br>
+                  <a href="https://github.com/uscmakers/mask_id" class="btn btn-primary js-scroll-trigger">Project GitHub</a>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Project 2 Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/project-pictures/SpacePainter.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">SPACE PAINTER</h4>
+                  <p class="mb-0 text-white-50">SpacePainter is a multi-axis CNC light painting robot. Essentially, it is a robotic arm that moves an LED in programmed patterns. When photographed by a long-exposure camera, the robot's path gets traced out in space by the light. It can be used to create cool effects in photos or as a multimedia installation piece. It is built with custom 3D printed parts and is controlled by an Arduino microcontroller. It uses two stepper motors to move and an Adafruit Neopixel as an LED.  Over the course of this semester, we have designed, built, and programmed the entire robot from scratch. The robot can paint five different light paintings and we are working on adding more! </p>
+                  <br>
+                  <a href="https://github.com/djleoscience/SpacePainter" class="btn btn-primary js-scroll-trigger">Project GitHub</a>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/project-pictures/SmartLock.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">SMART LOCK</h4>
+                  <p class="mb-0 text-white-50">Smart Lock is an IoT lock that can be controlled from your phone. Our front end is connected to a server that communicates with an Arduino. When the Arduino receives a message, it opens or closes the lock depending on the message received.  We designed a custom lock using CAD that can be attached to a deadbolt, and programmed the embedded system code as well as the communications and backend of the project.</p>
+                  <br>
+                  <a href="https://github.com/uscmakers/AutomaticLock" class="btn btn-primary js-scroll-trigger">Project GitHub</a>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/project-pictures/TicTacToe.jpg" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">SMART TIC-TAC-TOE</h4>
+                  <p class="mb-0 text-white-50">The goal of our project was to make a tic-tac-toe board that plays the game for you! You can make moves using voice commands, and X and O pieces will move across the board to the correct locations on the grid. You can also either play against a friend, or against an AI at three different difficulty levels. To implement speech recognition, we used a React web app and React API that listens to your voice through any laptop microphone. The moves you make are then sent back to our Python back-end which utilizes the Flask web framework. Here, our AI algorithm determines what moves to make in response, and our motor control code moves stepper motors to place pieces on the physical grid. The board itself is a 2 axis motor stage with linear slides, pulleys, and 3D-printed mounts. An electromagnet that is moved around by the motors turns on and off to pull magnetic pieces across the top of the board.</p>
+                  <br>
+                  <a href="https://github.com/uscmakers/smart-tic-tac-toe" class="btn btn-primary js-scroll-trigger">Project GitHub</a>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Showcase GBs Section -->
+
+  <section id="F20GB" class="projects-section bg-black">
+    <div class="container">
+      <h1 class="text-white mb-4 featured-text">FALL 2020 GUIDED BUILDS</h1>
+        
+        <!-- GB1 Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/GB-pictures/covid.JPG" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left" style="padding: 1em; padding-left: 4em;">
+                  <h4 class="text-white">COVID SIMULATION</h4>
+                  <p class="mb-0 text-white-50">Covid Simulation is a guided build that aims to simulate the spread of covid using a Respiratory Exchange Model.  Using math and physics models, we generated equations of trajectories of particles and later, total exposure to airborne covid particles.  We used a lot of python programming, including libraries such as matplotlib and numpy, and also gained an understanding of the physical phenomena that are at play when quantifying the spread of a particle through the air.  This guided build had an emphasis on Python programming skills and was headed by Radhika Bhuckory.</p>
+                  <br>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- GB2 Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/GB-pictures/cadapult.JPG" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">CAD-APULT</h4>
+                  <p class="mb-0 text-white-50">This guided build used Autodesk Fusion 360 CAD software to design a custom catapult.  We created complex geometric shapes to form the different parts of the catapult, including the base, the arches, and the arm.  We placed an emphasis on 3D design skills and 3D printing to give students a good understanding of how to plan, design, and implement CAD models.  Headed by Ashwan Kadam.</p>
+                  <br>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  GB3 Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/GB-pictures/calc.JPG" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">IOT TI84</h4>
+                  <p class="mb-0 text-white-50">In this very applicable guided build project, we learned how to hack a TI84 graphing calculator so it has internet communciation capabilities.  There was an emphasis on Arduino programming skills (specifically, using an ESP8266) and learning how to navigate the treacherous landscape of TI Basic coding.  The PM for IOT TI84 was Devin Mui.</p>
+                  <br>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- GB4 Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/GB-pictures/sonar.JPG" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">ARDUINO SONAR</h4>
+                  <p class="mb-0 text-white-50">The goal of this guided build is learning how to interface an Arduino with other sensors, and using Processing IDE to visualize data.  An ultrasonic sensor was used to gather data for the sonar system, and rotated using a servo to gather data around the periphery of the sensor.  We also used serial protocols to communicate between the Arduino and the computer, which then visualizes the data using Processing.  Headed by PM Efaz Muhaimen.</p>
+                  <br>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>          
+        <!-- GB5 Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/GB-pictures/bevel.JPG" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left" style="padding: 1em; padding-left: 4em;">
+                  <h4 class="text-white">GET ON MY BEVEL</h4>
+                  <p class="mb-0 text-white-50">The goal of this project is to use bevel gears to create a cool polygonal shape.  When you rotate one gear, it distorts the shape, but as you continue to rotate it gradually returns to its original form.  This GB not only taught members to CAD model individual parts, but also connect them to form a functioning composite design.  As an added bonus, members created their own custom Adobe Illustrator designs and imported them onto their CAD models!  Led by PM Ashwan Kadam.</p>
+                  <br>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- GB6 Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/GB-pictures/pcb.JPG" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">PCB DESIGN</h4>
+                  <p class="mb-0 text-white-50">As it name may suggest, this GB taught users how create PCB schematics, and then place them onto the board using PCB design software.  In doing this, members not only learned how to use Autodesk Eagle PCB design software, but also how to program their LED matrix microcontroller with an Arduino and solder parts onto their PCB board.  PMed by Efaz Muhaimen.</p>
+                  <br>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  GB7 Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/GB-pictures/synth.JPG" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">ARDUINO SYNTH</h4>
+                  <p class="mb-0 text-white-50">This GB introduced some crazy breadboarding skills, implementing resistor ladders, OP AMPS, and more into their design.  In addition to this, they used Arduino programming to generate the various waveforms required to produce musical sounds and play them through their circuit.  This GB had an emphasis on arduino programming and breadboarding, and was led by PM Devin Mui.</p>
+                  <br>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- Spring 2020 PROJECTS -->
+    <section id="S20Pr" class="projects-section bg-black">
       <div class="container">
-        <h1 class="text-white mb-4 featured-text">FALL 20 PROJECTS</h1>
-          <!-- Project Two Row -->
+        <h1 class="text-white mb-4 featured-text">Spring 2020 PROJECTS</h1>
+          <!-- Project 1 Row -->
           <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/MakersARMy.JPG" alt="">
@@ -94,7 +317,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 2 Row -->
           <div class="row justify-content-center no-gutters">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/ForgetMeNot.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
@@ -113,7 +336,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 3 Row -->
           <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/robo_naldo.JPG" alt="">
@@ -132,7 +355,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 4 Row -->
           <div class="row justify-content-center no-gutters">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/Apollo.jpeg" alt="">
@@ -150,7 +373,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 5 Row -->
           <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/DJRoomba.JPG" alt="">
@@ -169,7 +392,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 6 Row -->
           <div class="row justify-content-center no-gutters">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/SmartPen.jpg" alt="">
@@ -187,7 +410,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 7 Row -->
           <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/FlipOff.jpg" alt="">
@@ -205,7 +428,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 8 Row -->
           <div class="row justify-content-center no-gutters">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/SpideySense.jpg" alt="">
@@ -226,11 +449,11 @@
           </div>
     </section>
 
-    <!-- OLD Section -->
-    <section id="proj2" class="projects-section bg-black">
+    <!-- 2018-19 PROJECTS -->
+    <section id="1819Pr" class="projects-section bg-black">
       <div class="container">
         <h1 class="text-white mb-4 featured-text">2018-19 PROJECTS</h1>
-          <!-- Project Two Row -->
+          <!-- Project 1 Row -->
           <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/bitsplease.JPG" alt="">
@@ -247,7 +470,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 2 Row -->
           <div class="row justify-content-center no-gutters">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/bobababes.JPG" alt="" style="width: 100%; height: 100%; object-fit: cover;">
@@ -264,7 +487,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 3 Row -->
           <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/hades.JPG" alt="">
@@ -281,7 +504,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 4 Row -->
           <div class="row justify-content-center no-gutters">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/micromouse.JPG" alt="">
@@ -298,7 +521,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 5 Row -->
           <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/robosketch.JPG" alt="">
@@ -315,7 +538,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 6 Row -->
           <div class="row justify-content-center no-gutters">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/smartrebounder.JPG" alt="">
@@ -331,7 +554,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 7 Row -->
           <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/stratosspeaker.JPG" alt="">
@@ -348,7 +571,7 @@
               </div>
             </div>
           </div>
-          <!-- Project Two Row -->
+          <!-- Project 8 Row -->
           <div class="row justify-content-center no-gutters">
             <div class="col-lg-6">
               <img class="img-fluid" src="img/project-pictures/there-friends.JPG" alt="">
@@ -406,7 +629,7 @@
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
       <div class="container">
-        Copyright &copy; MAKERS 2020
+        Copyright &copy; MAKERS 2021
       </div>
     </footer>
 
