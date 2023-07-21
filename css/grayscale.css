@@ -544,7 +544,7 @@ footer {
 }
 
 #georgia {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/georgia.jpg");
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/georgia.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -637,7 +637,6 @@ footer {
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
-
 
 #ml {
   background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/tutorial-thumbnails/ml.png");
@@ -765,20 +764,13 @@ footer {
 }
 
 #yvonne {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/yvonne.jpg");
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/yvonne2.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
 
-#pooja {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/pooja.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
 
 #cameron {
   background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/cameron.jpg");
@@ -795,3 +787,52 @@ footer {
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
+
+#pooja {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/pooja.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#alexandra {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/alexandra.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#enrique {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/enrique.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#erin {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/erin.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#ishita {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/ishita.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#nathan {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/nathan.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
