@@ -706,15 +706,6 @@ footer {
   background-color: #333333F0;
 }
 
-
-#elizabeth {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/Elizabeth.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
 #aaron {
   background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/aaron.jpeg");
   background-size: cover;
@@ -762,9 +753,16 @@ footer {
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
+#pela {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/pela.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
 
-#yvonne {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/yvonne2.jpeg");
+#jason {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/jason.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -772,8 +770,8 @@ footer {
 }
 
 
-#cameron {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/cameron.jpg");
+#katherine {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/katherine.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -788,8 +786,8 @@ footer {
   background-attachment: scroll;
 }
 
-#pooja {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/pooja.jpg");
+#elizabeth {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/elizabeth.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -804,40 +802,40 @@ footer {
   background-attachment: scroll;
 }
 
-#jacob {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/jacob.jpg");
+#alanna {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/alanna.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
 
-#enrique {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/enrique.jpeg");
+#andrius {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/andrius.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
 
-#erin {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/erin.jpeg");
+#austin {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/austin.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
 
-#ishita {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/ishita.jpeg");
+#brennen {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/brennen.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
 
-#nathan {
-  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/nathan.jpeg");
+#brad {
+  background:  linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.8) 75%, #161616 100%), url("../img/eboard/brad.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
