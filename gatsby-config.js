@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Makers USC Website`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://viterbimakers.usc.edu`,
   },
   plugins: [
     //'gatsby-plugin-react-helmet',
