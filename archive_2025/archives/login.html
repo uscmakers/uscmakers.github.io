@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Makers at USC - Login</title>
+	<link rel="stylesheet" href="login.css" type="text/css"/>
+	<link rel="icon" href="images/icon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="banner">
+        <div id="mobileBanner">
+        <img src="images/new_hamburger_menu.png" id= "hamburgerMenu">
+		<a href="http://www.usc.edu/"><img id="mobileLogo" src="images/mobile_logo.png"></a></div>
+        <div class="mobileMenu"></div>
+            <ul class="mobileMenu">
+                <li class="mobileMenu"><a href="index.html">HOME</a></li>
+                <li class="mobileMenu"><a href="projects.html">TEAMS</a></li>
+                <li class="mobileMenu"><a href="events.html"> GALLERY</a></li>
+                <li class="mobileMenu"><a href="https://www.facebook.com/uscmakers/">CONTACT</a></li>
+                <li class="mobileMenu"><a href="apply.html">APPLY</a></li>
+                <li class="mobileMenu"><a href="login.html"> LOGIN</a></li>
+            </ul>
+        
+        
+        
+        
+		<header id="nav" class="nav-down">
+		<div id="homeButton"><a href="http://www.usc.edu/"><img src="images/usclogo.png"></a></div>
+			<ul>
+				<li id="returnButton"><a href="index.html">Home</a></li>
+				<li id="projectsButton"><a href="projects.html">Teams</a></li>
+                <li id="eventsButton"><a href="events.html">Gallery</a></li>
+				<li id="contactusButton"><a href="https://www.facebook.com/uscmakers/">Contact</a></li>
+				<li id="joinusButton"><a href="apply.html">Apply</a></li>
+                <li id="loginButton"><a href="login.html">Login</a></li>
+			</ul>
+		</header>
+	</div>
+        <div id="info">
+        <img id="lockIcon" src="images/Login/lock_icon.png">
+        
+        <form id="loginForm">
+            <div>
+                <div>
+                    <input id="usernameinput" class="passInput" type="text" name="username" placeholder="username" onclick="this.value=''"/>
+                </div>
+                <div>
+                    <input class="passInput" type="password" name="password" placeholder="password"/>
+                </div>
+            </div>
+            <input id="loginClickButton" type="button" onclick="check(this.form)" value="Login"/>
+        </form>
+            <div id="wrongInfo">username or password is incorrect</div>
+        </div>
+    <footer><div class="footerContent"><span id="makersCopyright">Makers at USC &copy; 2017<span id="socialMediaLogos"><a href="https://facebook.com/uscmakers"><img align="center" class="footerLogo" src="images/facebook_logo.png"></a>
+    
+    <a href=https://www.instagram.com/USCmakers><img align="center" class="footerLogo" src="images/instagram_logo.png"></a>
+        
+    </span></span></div></footer>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</html>

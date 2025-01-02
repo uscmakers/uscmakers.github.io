@@ -1,0 +1,106 @@
+.people-container {
+    padding: 2rem 12px; /* Adds 80px padding on the left and right */
+    text-align: center;
+    background-color: #fff; /* Adjust based on your theme */
+    display: flex; /* Use flexbox to center the grid */
+    flex-direction: column; /* Keep content in a column */
+    align-items: center; /* Centers the grid horizontally */
+    text-decoration: none;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers rows horizontally */
+    gap: 40px; /* Default space between cards */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 120px; /* Margin on sides of the screen */
+    max-width: calc(100% - 240px); /* Ensure cards respect side margins */
+    text-decoration: none;
+}
+
+.title {
+    font-size: 3rem !important;
+    color: #622830 !important; /* Matches the header color in your mockup */
+    margin-bottom: 2rem;
+}
+
+.team-card {
+    background: #8d404c;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    text-decoration: none;
+    max-width: 250px;
+    max-height: 400px;
+}
+
+.team-card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.team-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.team-card:hover {
+    transform: scale(1.05); /* Makes the card 10% bigger */
+}
+
+.team-image {
+    width: 100%;
+    padding-top: 5%; /* Aspect ratio 1:1 */
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.team-position {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #f8dbdf;
+    text-decoration: none;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 932px) {
+    .title {
+        font-size: 2rem !important;
+    }
+
+    .team-name {
+        font-size: 1rem;
+    }
+
+    .team-position {
+        font-size: 0.7rem;
+    }
+
+    .team-container {
+        padding: 0 10px !important; /* Smaller padding on sides for mobile */
+        gap: 10px; /* Reduce gap between cards on smaller screens */
+        max-width: calc(175% - 240px); /* Ensure cards respect side margins */
+
+    }
+
+    .team-card {
+        padding: 0.5rem !important; /* Reduce padding inside each card on mobile */
+        max-width: 125px;
+        height: 250px;
+    }
+
+    
+    .team-image {
+        margin-bottom: 0;
+    }
+}
