@@ -1,0 +1,150 @@
+.join-header {
+    padding: 0px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.join-header h1 {
+    font-size: 3rem;
+    color: #622830;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.join-header h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #622830;
+    margin-top: 10px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .join-header {
+        padding: 0px 40px;
+    }
+
+    .join-header h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .join-header h2 {
+        font-size: 1.7rem;
+        text-align: center;
+
+    }
+}
+
+
+.join-text {
+    padding: 0px 20px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .who-we-are-text p {
+    font-size: 1.5rem;
+  }
+
+  /* Text container */
+.join-text > div:first-child {
+  flex: 1;
+  padding-right: 0px;
+  padding-left: 80px;
+  display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+}
+/* Image container */
+.join-text > div:last-child {
+    flex: 3;
+    padding-right: 40px;
+    padding-left: 40px; 
+    align-items: flex-start; 
+    display: flex;
+    flex-direction: column;
+}
+
+.join-text p {
+    font-size: 1.5rem;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .join-text {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .join-text > div:first-child {
+    padding-left: 20px; /* Reduce padding for smaller screens */
+    margin-left: 20px;
+    padding-right: 20px; /* Add some padding on the right for symmetry */
+  }
+
+  .join-text > div:last-child {
+    padding-top: 20px;
+    padding-right: 0px; /* Remove right padding to align with text */
+    padding-left: 0px;
+    align-self: center; /* Center the carousel for a cleaner look */
+  }
+
+  .join-text p {
+    text-align: center;
+  }
+}
+
+.recruitment-timeline {
+    max-width: 80%;
+    height: auto;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .recruitment-timeline {
+        max-width: 90%;
+    }
+}
+
+.questions {
+    padding: 0px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.questions h1 { 
+    font-size: 3rem;
+    color: #622830; 
+    letter-spacing: 1px; 
+    text-align: left;
+    font-weight: normal;
+}
+
+.questions h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #622830;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .questions {
+        padding: 0px 40px;
+    }
+
+    .questions h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .questions h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
