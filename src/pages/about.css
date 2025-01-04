@@ -13,12 +13,12 @@
 
 
 .conditional-space {
-    white-space: nowrap; /* Prevent line break by default (for desktop) */
+    white-space: nowrap; 
   }
   
   @media (max-width: 768px) {
     .conditional-space {
-      white-space: normal; /* Allow breaking on mobile */
+      white-space: normal; 
     }
 
     .about-landing-container {
@@ -76,7 +76,7 @@
     }
 
     .about-us-header h2 {
-        font-size: 2rem; /* Adjust font size for mobile */
+        font-size: 2rem; 
     }
 }
 
@@ -108,11 +108,11 @@
     }
 
     .about-us-body p {
-        font-size: 1rem; /* Adjust font size for mobile */
+        font-size: 1rem; 
     }
 
     .about-us-body ul {
-        font-size: 0.8rem; /* Adjust font size for mobile */
+        font-size: 0.8rem; 
     }
 }
 
@@ -143,11 +143,11 @@
     }
 
     .alumni h2 {
-        font-size: 2rem; /* Adjust font size for mobile */
+        font-size: 2rem;
     }
 
     .alumni p {
-        font-size: 1rem; /* Adjust font size for mobile */
+        font-size: 1rem; 
     }
 }
 
@@ -179,11 +179,11 @@
     }
 
     .sponsors h2 {
-        font-size: 2rem; /* Adjust font size for mobile */
+        font-size: 2rem; 
     }
 
     .sponsors p {
-        font-size: 1rem; /* Adjust font size for mobile */
+        font-size: 1rem; 
     }
 
     .sponsors img {
