@@ -32,8 +32,8 @@
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
     text-decoration: none;
-    max-width: 250px;
-    max-height: 400px;
+    max-width: 200px;
+    max-height: 320px;
 }
 
 .team-card a {
