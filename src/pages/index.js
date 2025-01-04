@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
 import { About } from './about.jsx'
 import './index.css';
-import "../styles/global.css"; // Ensure global styles file exists or create it.
+import "../styles/global.css"; 
 import videoFile from "../images/makers-web-lava.mp4";
 import mhiImage from '../images/mhi_white.png';
 import { Header } from '../components/Header';
@@ -50,8 +50,8 @@ return (
             position: 'absolute',
             bottom: '5%',
             left: '50%',
-            transform: 'translateX(-50%)',  // Centers the image horizontally
-            zIndex: 2, // Ensure image is on top of the video
+            transform: 'translateX(-50%)',  
+            zIndex: 2, 
             }}
         />
       </div>

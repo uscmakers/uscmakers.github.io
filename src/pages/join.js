@@ -36,7 +36,7 @@ const Join = () => {
                 borderRadius: "30px",
                 cursor: "pointer",
                 textAlign: "center",
-                textDecoration: "none", // Make sure the text inside doesn't get underlined
+                textDecoration: "none",
               }}
             >
               interest form
@@ -52,10 +52,9 @@ const Join = () => {
           </div>
           </section>
 
-          {/* Centered Image */}
           <div style={{ textAlign: "center", }}>
             <img
-              src={recruitmentTimeline} // Replace with the correct path to your image
+              src={recruitmentTimeline} 
               alt="Recruitment Timeline"
               className="recruitment-timeline"
             />

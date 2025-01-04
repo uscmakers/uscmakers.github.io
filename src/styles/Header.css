@@ -72,7 +72,7 @@
 }
 
 .nav-links:hover {
-    color: #CCCCCC; /* Slightly lighter color on hover */
+    color: #CCCCCC;
   }
 
 @media (max-width: 768px) {

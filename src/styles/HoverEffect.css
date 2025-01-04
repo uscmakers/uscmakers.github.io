@@ -6,45 +6,45 @@
   }
   
   .hover-container {
-    display: flex; /* Horizontal layout */
+    display: flex;
     align-items: center;
     position: relative;
     width: fit-content;
-    gap: 10px; /* Space between the square and the rectangle */
+    gap: 10px; 
   }
   
   .dark-square {
-    width: 150px; /* Adjust size as needed */
+    width: 150px;
     height: 150px;
     border-radius: 8px;
-    overflow: hidden; /* To ensure the image doesn't spill outside */
+    overflow: hidden; 
     z-index: 1;
-    /* No hover changes here since the image should stay visible */
+  
   }
   
   .dark-square-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image fills the square */
+    object-fit: cover; 
   }
   
   .light-square {
-    background-color: #f5c6d3; /* Light pink */
+    background-color: #f5c6d3;
     color: black;
-    width: 200px; /* Adjust width */
-    height: 150px; /* Match height of the image */
+    width: 200px; 
+    height: 150px; 
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;
     border-radius: 8px;
-    opacity: 0; /* Initially hidden */
-    transform: translateX(-20px); /* Slightly overlap initially */
+    opacity: 0;
+    transform: translateX(-20px); 
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
   
   .light-square.visible {
     opacity: 1;
-    transform: translateX(0); /* Slide into view */
+    transform: translateX(0);
   }
   

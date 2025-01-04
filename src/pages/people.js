@@ -1,6 +1,6 @@
 // src/pages/people.js
 import React from 'react';
-import '../styles/people.css'; // Add custom styles here
+import '../styles/people.css'; 
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 

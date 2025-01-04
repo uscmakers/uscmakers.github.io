@@ -14,7 +14,6 @@
     font-style: normal;
   }
   
-  /* Apply the font globally */
   body {
     font-family: 'Garet', sans-serif;
   }
@@ -22,7 +21,7 @@
   
   .who-we-are button {
     display: block;
-    margin: 20px auto 0; /* Center horizontally and add top margin */
+    margin: 20px auto 0;
     background-color: #622830;
     color: white;
     font-size: 18px;
@@ -38,15 +37,13 @@
     max-width: 600px;  
     margin: 0 auto;
   }
-  /* For larger screens, keep carousel width as 50% up to 600px */
+  
 .carousel-container {
   width: 100%;
   max-width: 600px;
   margin: 20px;
   padding-top: 0;
 }
-
-/* For smaller screens, set the width of the carousel to 90% of the screen */
 
 
 @media (max-width: 968px) {
@@ -59,8 +56,8 @@
 
   
 .centered-line {
-  width: 100%; /* Set the width to 90% of the screen */
-  margin-top: 20px; /* Center the line horizontally */
-  border: 2px solid #622830; /* Define the color and thickness of the line */
+  width: 100%; 
+  margin-top: 20px; 
+  border: 2px solid #622830; 
   
 }

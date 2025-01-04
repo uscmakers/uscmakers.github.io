@@ -73,24 +73,23 @@
     font-size: 1.5rem;
 }
 
-/* Responsive styling for mobile */
 @media (max-width: 768px) {
   .join-text {
-    flex-direction: column; /* Stack items vertically */
-    padding: 10px; /* Adjust padding for smaller screens */
+    flex-direction: column; 
+    padding: 10px;
   }
 
   .join-text > div:first-child {
-    padding-left: 20px; /* Reduce padding for smaller screens */
+    padding-left: 20px; 
     margin-left: 20px;
-    padding-right: 20px; /* Add some padding on the right for symmetry */
+    padding-right: 20px; 
   }
 
   .join-text > div:last-child {
     padding-top: 20px;
-    padding-right: 0px; /* Remove right padding to align with text */
+    padding-right: 0px; 
     padding-left: 0px;
-    align-self: center; /* Center the carousel for a cleaner look */
+    align-self: center; 
   }
 
   .join-text p {

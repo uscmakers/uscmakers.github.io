@@ -11,17 +11,16 @@
 .team-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centers rows horizontally */
-    gap: 40px; /* Default space between cards */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 0 120px; /* Margin on sides of the screen */
-    max-width: calc(100% - 240px); /* Ensure cards respect side margins */
+    justify-content: center; 
+    gap: 40px; /* Center the container horizontally */
+    padding: 0 120px; 
+    max-width: calc(100% - 240px); 
     text-decoration: none;
 }
 
 .title {
     font-size: 3rem !important;
-    color: #622830 !important; /* Matches the header color in your mockup */
+    color: #622830 !important; 
     margin-bottom: 2rem;
 }
 
@@ -30,10 +29,10 @@
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
     text-decoration: none;
-    max-width: 250px;
-    max-height: 400px;
+    max-width: 200px;
+    max-height: 320px;
 }
 
 .team-card a {
@@ -47,12 +46,12 @@
 }
 
 .team-card:hover {
-    transform: scale(1.05); /* Makes the card 10% bigger */
+    transform: scale(1.05); 
 }
 
 .team-image {
     width: 100%;
-    padding-top: 5%; /* Aspect ratio 1:1 */
+    padding-top: 5%; 
     border-radius: 6px;
     margin-bottom: 1rem;
 }
@@ -87,14 +86,14 @@
     }
 
     .team-container {
-        padding: 0 10px !important; /* Smaller padding on sides for mobile */
-        gap: 10px; /* Reduce gap between cards on smaller screens */
-        max-width: calc(175% - 240px); /* Ensure cards respect side margins */
+        padding: 0 10px !important; 
+        gap: 10px;
+        max-width: calc(175% - 240px); 
 
     }
 
     .team-card {
-        padding: 0.5rem !important; /* Reduce padding inside each card on mobile */
+        padding: 0.5rem !important; 
         max-width: 125px;
         height: 250px;
     }
