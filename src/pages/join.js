@@ -30,7 +30,7 @@ const Join = () => {
                 backgroundColor: "#622830",
                 color: "#fff",
                 padding: "15px 20px",
-                fontSize: "2.2rem",
+                fontSize: "2.8rem",
                 fontWeight: "normal",
                 border: "none",
                 borderRadius: "30px",
