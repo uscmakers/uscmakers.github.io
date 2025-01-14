@@ -25,12 +25,12 @@ const Join = () => {
       <section className="join-text">
         <div>
             <Link 
-              to="https://forms.gle/7rmAAqmCbW4B25At6"
+              to="https://docs.google.com/forms/d/e/1FAIpQLSceoHD2so8d92mUxwROKNS97k83opMh5RknBTIsZzaFVKqsDQ/viewform"
               style={{
                 backgroundColor: "#622830",
                 color: "#fff",
                 padding: "15px 20px",
-                fontSize: "2.2rem",
+                fontSize: "2.8rem",
                 fontWeight: "normal",
                 border: "none",
                 borderRadius: "30px",
@@ -39,7 +39,7 @@ const Join = () => {
                 textDecoration: "none",
               }}
             >
-              interest form
+              apply now!
             </Link>
           </div>        
         {/* Right Side: Text and Image */}
