@@ -13,6 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
+    "predeploy": "gatsby clean && gatsby build --prefix-paths"
+    "deploy": "npm run deploy"
   },
   "dependencies": {
     "gatsby": "^5.14.0",
@@ -28,6 +30,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@types/react-slick": "^0.23.13"
+    "@types/react-slick": "^0.23.13",
+    "gh-pages": "^6.3.0"
   }
 }
