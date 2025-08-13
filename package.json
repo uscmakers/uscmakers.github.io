@@ -12,9 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
-    "predeploy": "gatsby clean && gatsby build --prefix-paths"
-    "deploy": "npm run deploy"
+    "clean": "gatsby clean",
+      "predeploy": "gatsby build --prefix-paths",
+  "deploy": "rm -rf ./node_modules/.cache/gh-pages && gh-pages -d public -b gh-pages --add"
   },
   "dependencies": {
     "gatsby": "^5.14.6",
