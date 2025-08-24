@@ -25,7 +25,7 @@ const Join = () => {
       <section className="join-text">
         <div>
             <Link 
-              to="https://docs.google.com/forms/d/e/1FAIpQLSceoHD2so8d92mUxwROKNS97k83opMh5RknBTIsZzaFVKqsDQ/viewform"
+              to="https://forms.gle/mR6WrLgAaLueRBbq6"
               style={{
                 backgroundColor: "#622830",
                 color: "#fff",
@@ -46,19 +46,19 @@ const Join = () => {
         <div>
 
           <p style={{ fontSize: "24px" }}>
-            our applications open on monday, jan. 13th!
-            <br /> for more details, see our recruitment timeline.
+            our applications open on monday, aug. 25th!
+            <br /> for more details on our timeline, see our Instagram @makersusc.
           </p>
           </div>
           </section>
 
-          <div style={{ textAlign: "center", }}>
+          {/* <div style={{ textAlign: "center", }}>
             <img
               src={recruitmentTimeline} 
               alt="Recruitment Timeline"
               className="recruitment-timeline"
             />
-          </div>
+          </div> */}
         
       <section className="questions">
         <div>
