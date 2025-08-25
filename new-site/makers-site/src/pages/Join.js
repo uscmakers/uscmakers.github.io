@@ -12,7 +12,7 @@ const Join = () => {
       {/* Header Section */}
       <section className="join-header">
         <div>
-          <h1>spring 2025 recruitment</h1>
+          <h1>fall 2025 recruitment</h1>
           <h2>interested in becoming a Maker?</h2>
         </div>
       </section>

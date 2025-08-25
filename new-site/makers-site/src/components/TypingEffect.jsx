@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import ReactTypingEffect from "react-typing-effect";
+import { Typewriter } from "react-simple-typewriter";
 
 const TypingEffect = () => {
   return (
     <div>
-      <ReactTypingEffect
+      <Typewriter
         text={[
           "expression",
           "imagination",
