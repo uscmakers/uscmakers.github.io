@@ -13,14 +13,16 @@ import juan from "../images/eboard/juan.png";
 import nelson from "../images/eboard/nelson.jpg";
 import jacob from "../images/eboard/jacob.jpeg";
 
-import anoushka from "../images/projectmanagers/anoushka.jpeg";
-import ashly from "../images/projectmanagers/ashly.jpeg";
-import david from "../images/projectmanagers/david.jpeg";
-import hayden from "../images/projectmanagers/hayden.jpeg";
-import irith from "../images/projectmanagers/irith.jpeg";
-import jack from "../images/projectmanagers/jack.jpg";
-import mitch from "../images/projectmanagers/mitch.jpeg";
-import yashvi from "../images/projectmanagers/yashvi.jpeg";
+import evangelos from "../images/projectmanagers/evangelos.png";
+import hannah from "../images/projectmanagers/hannah.png";
+import jason from "../images/projectmanagers/jason.png";
+import kaylee from "../images/projectmanagers/kaylee.png";
+import vrinda from "../images/projectmanagers/vrinda.png";
+import zach from "../images/projectmanagers/zach.png";
+import clay from "../images/projectmanagers/clay.png";
+import cynthia from "../images/projectmanagers/cynthia.png";
+import john from "../images/projectmanagers/john.png";
+import raksheta from "../images/projectmanagers/raksheta.jpg";
 
 const eboardMembers = [
   {
@@ -81,64 +83,64 @@ const eboardMembers = [
 
 const projectManagers = [
   {
-    name: "Irith Katiyar",
-    title: "Dance Cam",
-    photo: irith,
-    linkedin: "https://www.linkedin.com/in/irith-katiyar/",
+    name: "Evangelos Neophytou ",
+    title: "Hydro.",
+    photo: evangelos,
+    linkedin: "https://www.linkedin.com/in/evangelos-neophytou/",
   },
   {
-    name: "Yashvi Deliwala",
-    title: "TerraTracer",
-    photo: yashvi,
-    linkedin: "https://www.linkedin.com/in/yashvideliwala/",
+    name: "Hannah Fonseca",
+    title: "AutoChord",
+    photo: hannah,
+    linkedin: "https://www.linkedin.com/in/hannah-fonseca-/",
   },
   {
-    name: "Anoushka Narayan",
-    title: "ATE Ball",
-    photo: anoushka,
-    linkedin: "https://www.linkedin.com/in/anoushkanarayan/",
+    name: "Jason Wiemels",
+    title: "PAFT",
+    photo: jason,
+    linkedin: "https://www.linkedin.com/in/jwiemels/",
   },
   {
-    name: "Ashly Lam",
-    title: "Karate Kid",
-    photo: ashly,
-    linkedin: "https://www.linkedin.com/in/ashlylam/",
+    name: "Kaylee Hou",
+    title: "AeroPet",
+    photo: kaylee,
+    linkedin: "https://www.linkedin.com/in/kayleehou/",
   },
   {
-    name: "Hayden Ranshaw",
-    title: "Anthony",
-    photo: hayden,
-    linkedin: "https://www.linkedin.com/in/hayden-ranshaw-502410297/",
+    name: "Vrinda Gandhi",
+    title: "Jeeves.",
+    photo: vrinda,
+    linkedin: "https://www.linkedin.com/in/vrindadgandhi/",
   },
   {
-    name: "Jack Nuttall",
-    title: "Bulls-AI",
-    photo: jack,
-    linkedin: "https://www.linkedin.com/in/jack-nuttall-807702253//",
+    name: "Zach Olson",
+    title: "Rocket the Robot",
+    photo: zach,
+    linkedin: "https://www.linkedin.com/in/olsonzachary/",
   },
   {
-    name: "Jacob Rojit",
-    title: "Kaleido-Kickz",
-    photo: jacob,
-    linkedin: "https://www.linkedin.com/in/jacobrojit/",
+    name: "Clay Koessler",
+    title: "Sunshine Sleep Mask",
+    photo: clay,
+    linkedin: "https://www.linkedin.com/in/clayton-koessler/",
   },
   {
-    name: "Mitchell Kirby",
-    title: "Power Path",
-    photo: mitch,
-    linkedin: "https://www.linkedin.com/in/mitchell-kirby/",
+    name: "Cynthia Liu",
+    title: "a(chord)ion",
+    photo: cynthia,
+    linkedin: "https://www.linkedin.com/in/cynthliu/",
   },
   {
-    name: "David Bai",
-    title: "BCD",
-    photo: david,
-    linkedin: "https://www.linkedin.com/in/david-bai/",
+    name: "John Peng",
+    title: "Skate-Mo",
+    photo: john,
+    linkedin: "https://www.linkedin.com/in/yc-john-peng/",
   },
   {
-    name: "Vivien Chen",
-    title: "Magic Mirror",
-    photo: vivien,
-    linkedin: "https://www.linkedin.com/in/vivien-chen-34745920b/",
+    name: "Raksheta Kulkarni",
+    title: "FIFO",
+    photo: raksheta,
+    linkedin: "https://www.linkedin.com/in/rakshetakulkarni/",
   },
 ];
 
@@ -173,28 +175,32 @@ const People = () => {
       </div>
 
       {/* Project Managers Section (optional, uncomment if needed) */}
-      {/*
-      <div className="people-container">
-        <h2 className="title">meet the project managers</h2>
-        <div className="team-container">
-          {projectManagers.map((member, index) => (
-            <a
-              href={member.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={index} 
-              className="team-link"
-            >
-              <div className="team-card">
-                <img src={member.photo} alt={member.name} className="team-image"/>
-                <h3 className="team-name">{member.name}</h3>
-                <p className="team-position">{member.title}</p>
-              </div>
-            </a>
-          ))}
+      {
+        <div className="people-container">
+          <h2 className="title">meet the project managers</h2>
+          <div className="team-container">
+            {projectManagers.map((member, index) => (
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="team-link"
+              >
+                <div className="team-card">
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="team-image"
+                  />
+                  <h3 className="team-name">{member.name}</h3>
+                  <p className="team-position">{member.title}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-      */}
+      }
 
       <Footer />
     </main>
