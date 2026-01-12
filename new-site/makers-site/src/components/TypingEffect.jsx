@@ -3,21 +3,24 @@ import { Typewriter } from "react-simple-typewriter";
 
 const TypingEffect = () => {
   return (
-    <div>
+    <span>
       <Typewriter
-        text={[
+        words={[
           "expression",
           "imagination",
           "creativity",
           "passion",
           "individuality",
         ]}
-        eraseDelay={750}
-        typingDelay={250}
-        speed={75}
-        eraseSpeed={50}
+        loop={0}
+        cursor
+        cursorStyle="|"
+        typeSpeed={75}
+        deleteSpeed={50}
+        delaySpeed={750}
       />
-    </div>
+    </span>
   );
 };
+
 export default TypingEffect;

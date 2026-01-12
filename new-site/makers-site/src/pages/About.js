@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // use React Router
 import "../styles/global.css";
-import "../styles/about.css";
+import "../styles/About.css";
 import landscape from "../images/landscape.jpg";
 import sp23retreat from "../images/sp23_retreat.jpg";
 import alumniReach from "../images/alumni-reach.png";
