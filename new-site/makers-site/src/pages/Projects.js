@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header.js";
 import ProjectHeader from "../components/ProjectHeader.js";
 import Footer from "../components/Footer.js";
 import "../styles/global.css";
 import "../styles/projects.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import {
   projects,
@@ -17,6 +17,22 @@ import {
 } from "../components/ProjectHelper.js";
 
 const Projects = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const section = params.get("section");
+    if (!section) return;
+
+    // Wait a tick so the DOM is ready before scrolling
+    setTimeout(() => {
+      const el = document.getElementById(section);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 0);
+  }, [location.search]);
+
   return (
     <main>
       <ProjectHeader />
