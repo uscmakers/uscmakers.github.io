@@ -41,7 +41,8 @@
 .join-text {
   padding: 0px 20px;
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* ✅ key fix */
+  margin-top: 60px;
 }
 
 .join-text > div:first-child {
@@ -50,12 +51,12 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 15px 80px 0 20px;
+  padding: 0 80px 0 20px; /* ❗ removed top padding */
 }
 
 .join-text > div:last-child {
   flex: 3;
-  padding: 20px 40px 0 40px;
+  padding: 0 40px; /* ❗ removed top padding */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -63,8 +64,10 @@
 
 .join-text p {
   font-size: 1.5rem;
+  margin: 0; /* prevents baseline drift */
 }
 
+/* Button */
 .apply-button {
   background-color: #622830;
   color: #fff;
@@ -76,25 +79,30 @@
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+
+  /* keeps text perfectly centered */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
   .join-text {
     flex-direction: column;
     padding: 10px;
+    align-items: center;
+    text-align: center;
   }
 
   .join-text > div:first-child {
-    padding-left: 20px;
-    margin-left: 20px;
-    padding-right: 20px;
+    padding: 0;
+    margin-bottom: 20px;
+    justify-content: center;
   }
 
   .join-text > div:last-child {
-    padding-top: 20px;
-    padding-right: 0px;
-    padding-left: 0px;
-    align-self: center;
+    padding: 0;
+    align-items: center;
   }
 
   .join-text p {
@@ -121,6 +129,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 80px;
 }
 
 .questions h1 {
@@ -142,6 +151,7 @@
 @media (max-width: 768px) {
   .questions {
     padding: 0px 40px;
+    align-items: center;
   }
 
   .questions h1 {
