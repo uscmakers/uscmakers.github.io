@@ -4,20 +4,12 @@ import "../styles/ProjectHeader.css";
 
 const ProjectHeader = () => {
   const items = [
-    "current projects",
+    "2024-2025",
     "2023-2024",
     "2022-2023",
     "2021-2022",
     "2018-2021",
   ];
-
-  const toSectionId = (item) => {
-    // Match your existing IDs in Projects.js:
-    // "current projects" -> "current-projects"
-    // "2023-2024" -> "2023-2024"
-    if (item === "current projects") return "current-projects";
-    return item;
-  };
 
   return (
     <header className="project-header">
@@ -48,13 +40,9 @@ const ProjectHeader = () => {
         <nav>
           <ul className="project-nav-container">
             {items.map((item, index) => {
-              const sectionId = toSectionId(item);
-
               // ✅ Works with HashRouter:
               // Keeps route as "/projects" and passes target section via query param.
-              const href = `/#/projects?section=${encodeURIComponent(
-                sectionId
-              )}`;
+              const href = `/#/projects?section=${encodeURIComponent(item)}`;
 
               return (
                 <li key={index}>

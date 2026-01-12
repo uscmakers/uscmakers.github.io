@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "../components/Header.js";
 import ProjectHeader from "../components/ProjectHeader.js";
 import Footer from "../components/Footer.js";
 import "../styles/global.css";
@@ -37,13 +36,10 @@ const Projects = () => {
     <main>
       <ProjectHeader />
       <div className="projects-container">
-        {/* Current projects */}
-        <h1 className="page-title" id="current-projects">
-          current projects
+        {/* 2024-2025 projects */}
+        <h1 className="page-title" id="2024-2025">
+          2024-2025 projects
         </h1>
-        <p className="page-subtitle">
-          explore our projects for the 2024-2025 academic year!
-        </p>
         {projects.map((project, index) => (
           <div className="project-section" key={index}>
             <div className="project-content">
