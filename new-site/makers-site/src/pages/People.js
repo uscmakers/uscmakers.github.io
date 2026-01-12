@@ -9,7 +9,7 @@ import mary from "../images/eboard/mary.jpg";
 import may from "../images/eboard/may.jpg";
 import vivien from "../images/eboard/vivien2.jpg";
 import vardhan from "../images/eboard/vardhan.jpeg";
-import juan from "../images/eboard/juan.jpeg";
+import juan from "../images/eboard/juan.png";
 import nelson from "../images/eboard/nelson.jpg";
 import jacob from "../images/eboard/jacob.jpeg";
 
