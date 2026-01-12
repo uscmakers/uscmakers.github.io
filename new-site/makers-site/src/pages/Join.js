@@ -12,7 +12,7 @@ const Join = () => {
       {/* Header Section */}
       <section className="join-header">
         <div>
-          <h1>fall 2025 recruitment</h1>
+          <h1>spring 2026 recruitment</h1>
           <h2>interested in becoming a Maker?</h2>
         </div>
       </section>
@@ -21,7 +21,7 @@ const Join = () => {
       <section className="join-text">
         <div>
           <a
-            href="https://forms.gle/mR6WrLgAaLueRBbq6"
+            href="https://forms.gle/RNdSwVw9FPKcRgHi8"
             target="_blank"
             rel="noopener noreferrer"
             className="apply-button"
@@ -32,7 +32,7 @@ const Join = () => {
 
         <div>
           <p>
-            our applications open on monday, aug. 25th!
+            our applications open on monday, jan. 12th!
             <br />
             for more details on our timeline, see our Instagram @makersusc.
           </p>
