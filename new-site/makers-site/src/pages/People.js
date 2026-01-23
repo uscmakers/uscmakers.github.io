@@ -12,6 +12,7 @@ import vardhan from "../images/eboard/vardhan.jpeg";
 import juan from "../images/eboard/juan.png";
 import nelson from "../images/eboard/nelson.jpg";
 import jacob from "../images/eboard/jacob.jpeg";
+import alexandra from "../images/eboard/alexandra.png";
 
 import evangelos from "../images/projectmanagers/evangelos.png";
 import hannah from "../images/projectmanagers/hannah.png";
@@ -78,6 +79,12 @@ const eboardMembers = [
     title: "Director of Technical Operations",
     photo: marios,
     linkedin: "https://www.linkedin.com/in/marios-tsotras-13ab56300/",
+  },
+  {
+    name: "Alexandra Somodi",
+    title: "Senior Advisor",
+    photo: alexandra,
+    linkedin: "https://www.linkedin.com/in/alexandra-somodi/",
   },
 ];
 
