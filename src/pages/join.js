@@ -14,7 +14,7 @@ const Join = () => {
       <section className="join-header">
         <div>
           <h1>
-            spring 2025 recruitment
+            fall 2026 recruitment
           </h1>
           <h2>
             interested in becoming a Maker?
@@ -25,7 +25,7 @@ const Join = () => {
       <section className="join-text">
         <div>
             <Link 
-              to="https://forms.gle/mR6WrLgAaLueRBbq6"
+              to="https://docs.google.com/forms/d/e/1FAIpQLSe-1RSzj7UMA51FitDIT8sQ8e4Ld6Cqms_XwyMhPE6F20Diag/viewform?usp=dialog"
               style={{
                 backgroundColor: "#622830",
                 color: "#fff",
@@ -46,7 +46,7 @@ const Join = () => {
         <div>
 
           <p style={{ fontSize: "24px" }}>
-            our applications open on monday, aug. 25th!
+            our applications open on monday, aug. 24th!
             <br /> for more details on our timeline, see our Instagram @makersusc.
           </p>
           </div>
