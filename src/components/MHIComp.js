@@ -1,17 +1,15 @@
-import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import React from "react";
 
-const ImageComponent = () => {
+const MHIComp = () => {
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <StaticImage
-        src="../images/mhi_new.png" // Adjust path if needed
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <img
+        src="/images/mhi_new.png" // Public folder path
         alt="USC Ming Hsieh Institute"
-        style={{ maxWidth: '80%', height: 'auto' }}
-        placeholder="blurred" // Optional: adds a blurred placeholder effect
+        style={{ maxWidth: "80%", height: "auto" }}
       />
     </div>
   );
 };
 
-export default ImageComponent;
+export default MHIComp;

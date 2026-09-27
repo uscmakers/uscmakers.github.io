@@ -1,14 +1,10 @@
-// src/components/BackgroundCarousel.js
-
 import React from "react";
-import { Link } from 'gatsby';
-
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import "../styles/global.css"; // Ensure your global styles are applied
-import "../pages/index.css";
-import image1 from "../images/retreat-background.jpg";
-import image2 from "../images/retreat-background2.jpg";
-import image3 from "../images/retreat-background3.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../styles/global.css";
+import "../styles/index.css";
 
 const BackgroundCarousel = () => {
   const settings = {
@@ -23,6 +19,12 @@ const BackgroundCarousel = () => {
     arrows: false,
   };
 
+  const images = [
+    "/images/retreat-background.jpg",
+    "/images/retreat-background2.jpg",
+    "/images/retreat-background3.jpg",
+  ];
+
   return (
     <div
       style={{
@@ -32,60 +34,28 @@ const BackgroundCarousel = () => {
         height: "100vh",
       }}
     >
-      {/* Carousel */}
       <Slider {...settings}>
-        <div>
-          <img
-            src={image1}
-            alt="Carousel Image 1"
-            style={{
-              width: "100%",
-              height: "100vh",
-              objectFit: "cover",
-            }}
-          />
-        </div>
-        <div>
-          <img
-            src={image2}
-            alt="Carousel Image 2"
-            style={{
-              width: "100%",
-              height: "100vh",
-              objectFit: "cover",
-            }}
-          />
-        </div>
-        <div>
-          <img
-            src={image3}
-            alt="Carousel Image 3"
-            style={{
-              width: "100%",
-              height: "100vh",
-              objectFit: "cover",
-            }}
-          />
-        </div>
+        {images.map((src, idx) => (
+          <div key={idx}>
+            <img
+              src={src}
+              alt={`Carousel Image ${idx + 1}`}
+              style={{ width: "100%", height: "100vh", objectFit: "cover" }}
+            />
+          </div>
+        ))}
       </Slider>
 
-      {/* Overlay Content */}
-      <div className="background-carousel-overlay"
-      >
-        <h1>
-          join a community&nbsp;of
-        </h1>
-        <p>
-          60+&nbsp;Makers
-        </p>
-        <Link 
-  to="/join"
-  className="background-carousel-button"
-  style={{opacity: 0.8}}
->
-  get involved!
-</Link>
-
+      <div className="background-carousel-overlay">
+        <h1>join a community&nbsp;of</h1>
+        <p>60+&nbsp;Makers</p>
+        <Link
+          to="/join"
+          className="background-carousel-button"
+          style={{ opacity: 0.8 }}
+        >
+          get involved!
+        </Link>
       </div>
     </div>
   );

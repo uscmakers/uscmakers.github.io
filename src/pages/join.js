@@ -1,75 +1,64 @@
-// src/pages/contact.js
-import React from 'react';
-import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
-import "./join.css";
-import { Link } from 'gatsby';
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import "../styles/join.css";
 import recruitmentTimeline from "../images/recruitment-timeline.png";
-
 
 const Join = () => {
   return (
     <main>
       <Header />
+
+      {/* Header Section */}
       <section className="join-header">
         <div>
-          <h1>
-            fall 2026 recruitment
-          </h1>
-          <h2>
-            interested in becoming a Maker?
-          </h2>
+          <h1>fall 2026 recruitment</h1>
+          <h2>interested in becoming a Maker?</h2>
         </div>
       </section>
 
+      {/* Apply Section */}
       <section className="join-text">
         <div>
-            <Link 
-              to="https://docs.google.com/forms/d/e/1FAIpQLSe-1RSzj7UMA51FitDIT8sQ8e4Ld6Cqms_XwyMhPE6F20Diag/viewform?usp=dialog"
-              style={{
-                backgroundColor: "#622830",
-                color: "#fff",
-                padding: "15px 20px",
-                fontSize: "2.8rem",
-                fontWeight: "normal",
-                border: "none",
-                borderRadius: "30px",
-                cursor: "pointer",
-                textAlign: "center",
-                textDecoration: "none",
-              }}
-            >
-              apply now!
-            </Link>
-          </div>        
-        {/* Right Side: Text and Image */}
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe-1RSzj7UMA51FitDIT8sQ8e4Ld6Cqms_XwyMhPE6F20Diag/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="apply-button"
+          >
+            apply now!
+          </a>
+        </div>
+
         <div>
-
-          <p style={{ fontSize: "24px" }}>
+          <p>
             our applications open on monday, aug. 24th!
-            <br /> for more details on our timeline, see our Instagram @makersusc.
+            <br />
+            for more details on our timeline, see our Instagram @makersusc.
           </p>
-          </div>
-          </section>
+        </div>
+      </section>
 
-          {/* <div style={{ textAlign: "center", }}>
-            <img
-              src={recruitmentTimeline} 
-              alt="Recruitment Timeline"
-              className="recruitment-timeline"
-            />
-          </div> */}
-        
+      {/* Optional recruitment timeline image */}
+      {/* <div style={{ textAlign: "center" }}>
+        <img
+          src={recruitmentTimeline}
+          alt="Recruitment Timeline"
+          className="recruitment-timeline"
+        />
+      </div> */}
+
+      {/* Questions Section */}
       <section className="questions">
         <div>
-          <h1>
-            questions?
-          </h1>
+          <h1>questions?</h1>
           <h2>
-          contact our e-board on Instagram @makersusc or via email at uscmakers@gmail.com!
+            contact our e-board on Instagram @makersusc or via email at
+            uscmakers@gmail.com!
           </h2>
         </div>
       </section>
+
       <Footer />
     </main>
   );

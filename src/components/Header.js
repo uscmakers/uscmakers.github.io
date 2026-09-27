@@ -1,45 +1,41 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link } from "react-router-dom"; // use React Router instead of Gatsby
 import "../styles/global.css";
 import "../styles/Header.css";
-import makersLogo from "../images/makers_combined_logo.png";
-import makersCrest from "../images/makers-crest-white.png";
+import logoCombined from "../images/makers_combined_logo.png";
+import logoCrestWhite from "../images/makers-crest-white.png";
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className="header">
-      {/* Left Section: Logo with a different background color */}
-
-        <div
+      {/* Left Section: Logo */}
+      <div>
+        <Link
+          to="/"
+          style={{
+            textDecoration: "none",
+            color: "#FFFFFF",
+          }}
         >
-          <Link
-            to="/"
-            style={{
-              textDecoration: "none",
-              color: "#FFFFFF",
-            }}
-          >
-            <img src={makersLogo} alt="Makers Logo" className="header-image"/>
-            <img src={makersCrest} alt="Makers Crest" className="header-image-mobile"/>
-          </Link>
-        </div>
+          <img src={logoCombined} alt="Makers Logo" className="header-image" />
+          <img
+            src={logoCrestWhite}
+            alt="Makers Crest"
+            className="header-image-mobile"
+          />
+        </Link>
+      </div>
 
       {/* Right Section: Navigation Menu */}
       <div>
         <nav>
-          <ul
-            className="nav-container"
-          >
+          <ul className="nav-container">
             {["about", "people", "projects", "join"].map((item, index) => (
               <li key={index}>
                 <Link
                   to={`/${item.toLowerCase().replace(" ", "-")}`}
-
                   className="nav-links"
-                  activeStyle={{
-                    fontWeight: "bold",
-                    textDecoration: "none",
-                  }}
+                  style={{ textDecoration: "none" }}
                 >
                   {item}
                 </Link>

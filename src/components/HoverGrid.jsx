@@ -1,15 +1,28 @@
 import React, { useState } from "react";
 import "../styles/HoverEffect.css";
-import learnLogo from "../images/learn-logo.png";
-import createLogo from "../images/create-logo.png";
-import collabLogo from "../images/collab-logo.png";
+
 export const HoverGrid = () => {
   const [hovered, setHovered] = useState(null);
 
   const items = [
-    { id: 1, text: "attend industry talks...", label: "learn", imgSrc: learnLogo },
-    { id: 2, text: "hone your engineering skills...", label: "create", imgSrc: createLogo},
-    { id: 3, text: "give back to our local community...", label: "collab", imgSrc: collabLogo },
+    {
+      id: 1,
+      text: "attend industry talks...",
+      label: "learn",
+      imgSrc: "/images/learn-logo.png",
+    },
+    {
+      id: 2,
+      text: "hone your engineering skills...",
+      label: "create",
+      imgSrc: "/images/create-logo.png",
+    },
+    {
+      id: 3,
+      text: "give back to our local community...",
+      label: "collab",
+      imgSrc: "/images/collab-logo.png",
+    },
   ];
 
   return (
@@ -23,10 +36,16 @@ export const HoverGrid = () => {
         >
           {/* The original image stays visible */}
           <div className="dark-square">
-            <img src={item.imgSrc} alt={item.label} className="dark-square-image" />
+            <img
+              src={item.imgSrc}
+              alt={item.label}
+              className="dark-square-image"
+            />
           </div>
           {/* The light pink square appears next to the image */}
-          <div className={`light-square ${hovered === item.id ? "visible" : ""}`}>
+          <div
+            className={`light-square ${hovered === item.id ? "visible" : ""}`}
+          >
             {item.text}
           </div>
         </div>
