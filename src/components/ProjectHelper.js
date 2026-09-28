@@ -1,5 +1,5 @@
 // junk file. all the imports you don't want to see!
-const projects = [
+const projects24_25 = [
   {
     title: "Dance Cam",
     subtitle: "choreography-tracking video camera",
@@ -581,7 +581,7 @@ const projects18_19 = [
 ];
 
 export {
-  projects,
+  projects24_25,
   projects23_24,
   projects22_23,
   projects21_22,

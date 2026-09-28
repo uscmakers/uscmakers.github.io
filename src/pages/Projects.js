@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
-import ProjectHeader from "../components/ProjectHeader.js";
+import React, { useEffect, useState } from "react";
+import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
 import "../styles/global.css";
 import "../styles/projects.css";
 import { Link, useLocation } from "react-router-dom";
 
 import {
-  projects,
+  projects24_25,
   projects23_24,
   projects22_23,
   projects21_22,
@@ -17,30 +17,36 @@ import {
 
 const Projects = () => {
   const location = useLocation();
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const section = params.get("section");
-    if (!section) return;
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 500);
+    };
 
-    // Wait a tick so the DOM is ready before scrolling
-    setTimeout(() => {
-      const el = document.getElementById(section);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }, 0);
-  }, [location.search]);
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <main>
-      <ProjectHeader />
+      <Header />
       <div className="projects-container">
         {/* 2024-2025 projects */}
         <h1 className="page-title" id="2024-2025">
           2024-2025 projects
         </h1>
-        {projects.map((project, index) => (
+        {projects24_25.map((project, index) => (
           <div className="project-section" key={index}>
             <div className="project-content">
               <div className="project-text">
@@ -215,6 +221,18 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      {showBackToTop && (
+        <button
+          type="button"
+          className="back-to-top"
+          onClick={scrollToTop}
+          aria-label="Back to top"
+        >
+          <span aria-hidden="true">↑</span>
+          <span>back to top</span>
+        </button>
+      )}
+
       <Footer />
     </main>
   );

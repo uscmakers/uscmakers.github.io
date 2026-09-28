@@ -37,26 +37,24 @@
   }
 }
 
-/* Apply Section */
 .join-text {
-  padding: 0px 20px;
+  padding: 0 120px;
   display: flex;
-  align-items: center; /* ✅ key fix */
+  align-items: center;
+  gap: 60px;
   margin-top: 60px;
 }
 
 .join-text > div:first-child {
-  flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  padding: 0 80px 0 20px; /* ❗ removed top padding */
+  padding: 0;
 }
 
 .join-text > div:last-child {
-  flex: 3;
-  padding: 0 40px; /* ❗ removed top padding */
+  flex: 1;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -71,7 +69,7 @@
 .apply-button {
   background-color: #622830;
   color: #fff;
-  padding: 15px 20px;
+  padding: 40px 20px;
   font-size: 2.8rem;
   font-weight: normal;
   border: none;
@@ -89,7 +87,7 @@
 @media (max-width: 768px) {
   .join-text {
     flex-direction: column;
-    padding: 10px;
+    padding: 40px;
     align-items: center;
     text-align: center;
   }
