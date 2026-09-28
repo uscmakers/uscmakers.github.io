@@ -3,7 +3,7 @@ import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
 import "../styles/global.css";
 import "../styles/projects.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
   projects24_25,
