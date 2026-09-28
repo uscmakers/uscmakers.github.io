@@ -3,7 +3,7 @@ import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
 import "../styles/global.css";
 import "../styles/projects.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import {
   projects24_25,
@@ -16,8 +16,28 @@ import {
 } from "../components/ProjectHelper.js";
 
 const Projects = () => {
-  // const location = useLocation();
+  const location = useLocation();
   const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+  const params = new URLSearchParams(location.search);
+  const section = params.get("section");
+
+  if (!section) return;
+
+  const timeout = setTimeout(() => {
+    const element = document.getElementById(section);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, 0);
+
+  return () => clearTimeout(timeout);
+  }, [location.search]);
 
   useEffect(() => {
     const handleScroll = () => {
