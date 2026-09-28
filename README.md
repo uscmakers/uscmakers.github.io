@@ -1,11 +1,25 @@
-# Getting Started with Create React App
+# Makers Website
+## Getting Started
+Go to `https://nodejs.org/en/download` and download the latest **LTS: Long Term Support Version** and follow the installation instructions for your system.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Check if npm is installed correctly
+``` bash
+npm --version
+```
+Make changes to the website and then create a local instance by running
+``` bash
+npm start
+```
+Open [http://localhost:3000](http://localhost:3000) to view the development in the browser. As you save changes, the development will auto update to show those.
 
-## Available Scripts
+When you're ready to deploy, you must first correct linting errors. Run the following command to fix it and make the necessary changes.
+```
+npm run lint
+```
 
-In the project directory, you can run:
+Finally, go ahead and push your commit to Github and the actions workflow will automatically deploy the website to [https://viterbimakers.usc.edu/](https://viterbimakers.usc.edu/)
 
+## Commands 
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -18,6 +32,8 @@ You may also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+No test have currently been written.
 
 ### `npm run build`
 
@@ -60,8 +76,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 ### Advanced Configuration
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
