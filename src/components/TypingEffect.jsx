@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 const TypingEffect = () => {

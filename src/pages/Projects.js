@@ -49,7 +49,7 @@ const Projects = () => {
               </div>
               <div className="project-image">
                 <div>
-                  <img src={project.image} alt={`${project.title} image`} />
+                  <img src={project.image} alt={`${project.title}`} />
                 </div>
                 <div>
                   <p className="project-description">{project.description}</p>
@@ -73,7 +73,7 @@ const Projects = () => {
               </div>
               <div className="project-image">
                 <div>
-                  <img src={project.image} alt={`${project.title} image`} />
+                  <img src={project.image} alt={`${project.title}`} />
                 </div>
                 <div>
                   <p className="project-description">{project.description}</p>
@@ -97,7 +97,7 @@ const Projects = () => {
               </div>
               <div className="project-image">
                 <div>
-                  <img src={project.image} alt={`${project.title} image`} />
+                  <img src={project.image} alt={`${project.title}`} />
                 </div>
                 <div>
                   <p className="project-description">{project.description}</p>
@@ -129,7 +129,7 @@ const Projects = () => {
               </div>
               <div className="project-image">
                 <div>
-                  <img src={project.image} alt={`${project.title} image`} />
+                  <img src={project.image} alt={`${project.title}`} />
                 </div>
                 <div>
                   <p className="project-description">{project.description}</p>
@@ -161,7 +161,7 @@ const Projects = () => {
               </div>
               <div className="project-image">
                 <div>
-                  <img src={project.image} alt={`${project.title} image`} />
+                  <img src={project.image} alt={`${project.title}`} />
                 </div>
                 <div>
                   <p className="project-description">{project.description}</p>
@@ -183,7 +183,7 @@ const Projects = () => {
               </div>
               <div className="project-image">
                 <div>
-                  <img src={project.image} alt={`${project.title} image`} />
+                  <img src={project.image} alt={`${project.title}`} />
                 </div>
                 <div>
                   <p className="project-description">{project.description}</p>

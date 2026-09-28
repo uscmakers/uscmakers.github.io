@@ -39,7 +39,7 @@ const BackgroundCarousel = () => {
           <div key={idx}>
             <img
               src={src}
-              alt={`Carousel Image ${idx + 1}`}
+              alt={`Carousel ${idx + 1}`}
               style={{ width: "100%", height: "100vh", objectFit: "cover" }}
             />
           </div>

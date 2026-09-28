@@ -34,7 +34,7 @@ export const ImageCarousel = () => {
           <div key={index}>
             <img
               src={src}
-              alt={`Carousel Image ${index + 1}`}
+              alt={`Carousel ${index + 1}`}
               style={{ width: "100%", height: "auto", borderRadius: "10px" }}
             />
           </div>

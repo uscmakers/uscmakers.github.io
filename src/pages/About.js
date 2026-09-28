@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom"; // use React Router
+// import React from "react";
+// import { Link } from "react-router-dom"; // use React Router
 import "../styles/global.css";
 import "../styles/About.css";
 import landscape from "../images/landscape.jpg";

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/join.css";
-import recruitmentTimeline from "../images/recruitment-timeline.png";
+// import recruitmentTimeline from "../images/recruitment-timeline.png";
 
 const Join = () => {
   return (
