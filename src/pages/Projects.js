@@ -16,7 +16,7 @@ import {
 } from "../components/ProjectHelper.js";
 
 const Projects = () => {
-  const location = useLocation();
+  // const location = useLocation();
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
