@@ -3,11 +3,11 @@ import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
 import "../styles/global.css";
 import "../styles/projects.css";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import {
   projects26_27,
-  projects25_26,
+  // projects25_26,
   projects24_25,
   projects23_24,
   projects22_23,
@@ -18,13 +18,13 @@ import {
 } from "../components/ProjectHelper.js";
 
 const projectsList = [
+  {
+      projects: projects26_27,
+      year: "2026-2027",
+      title: "current projects",
+  },
   // {
-  //     projects: projects26_27,
-  //     year: "2026-2027",
-  //     title: "current projects",
-  // },
-  // {
-  //     projects: [projects25_26],
+  //     projects: projects25_26,
   //     year: "2025-2026",
   //     title: "2025-2026 projects",
   // },
@@ -66,17 +66,39 @@ const projectsList = [
   },
 ]
 
-function ProjectCard({ project, index }) {
+function ProjectCard({ project }) {
+  const image = (
+    <img
+      src={project.image}
+      alt={`${project.title} preview`}
+      loading="lazy"
+      decoding="async"
+    />
+  );
+
   return (
-    <div className="project-section" id={index || ""}>
+    <div className="project-section">
       <div className="project-content">
         <div className="project-text">
           <h2 className="project-title">{project.title}</h2>
           <h3 className="project-subtitle">{project.subtitle}</h3>
         </div>
+
         <div className="project-image">
           <div>
-            <img src={project.image} alt={`${project.title}`} />
+            {project.pdf ? (
+              <a
+                href={project.pdf}
+                className="project-pdf-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`View ${project.title} slides`}
+              >
+                {image}
+              </a>
+            ) : (
+              image
+            )}
           </div>
           <div>
             <p className="project-description">{project.description}</p>
@@ -86,6 +108,7 @@ function ProjectCard({ project, index }) {
     </div>
   );
 }
+
 
 function ProjectSection({year, title, projects, showcase}) {
   return (    
@@ -109,7 +132,7 @@ function ProjectSection({year, title, projects, showcase}) {
         {projects.map((project) => (
           <ProjectCard
             project={project}
-            index={title}
+            key={title}
           />
         ))}
       </div>
@@ -169,6 +192,7 @@ const Projects = () => {
       <div className="projects-container">
         {projectsList.map((projectsSection) => (
           <ProjectSection
+            key={projectsSection.year}
             year={projectsSection.year}
             title={projectsSection.title}
             projects={projectsSection.projects}

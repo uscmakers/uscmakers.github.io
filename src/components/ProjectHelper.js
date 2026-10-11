@@ -2,75 +2,158 @@
 const projects26_27 = [
     {
     title: "StarSabers",
-    subtitle: "",
+    subtitle: "Duel with sabers that know your moves",
     description:
       "A set of realistic lightsabers with which we’ll develop a fight system capable ofrecognizing different movements and react to them. As an expansion, we’re building a game (like BeatSabers) where we could use the sabers as joysticks.",
-    image: "",
+    pdf: "/images/projects/26-27/StarSabers.pdf",
+    image: "/images/projects/26-27/StarSabers.png"
   },
   {
     title: "Artemis",
-    subtitle: "",
+    subtitle: "Find your aim before you release",
     description:
       "The project is an archery aiming assistant – it guides the user on exactly how to hit a perfect target. The user handles the bow and arrow like normal, and the system will tell them whether to pitch up/down, pivot left/right, or draw the arrow more.",
-    image: "",
+    pdf: "/images/projects/26-27/ARTEMIS.pdf",
+    image: "/images/projects/26-27/ARTEMIS.png",
   },
     {
     title: "Puzzle Box",
-    subtitle: "",
+    subtitle: "Solve the box before time runs out",
     description:
       "Puzzle box is an escape room in a box with physical puzzles which need to be manipulated in order to open compartments and reveal new sections of the box. Each puzzle solution will open compartments until players get to a prize at the end, as long as they finish before time runs out.",
-    image: "",
+    pdf: "/images/projects/26-27/PuzzleBox.pdf",
+    image: "/images/projects/26-27/PuzzleBox.png"
   },
     {
     title: "CP3AI",
-    subtitle: "",
+    subtitle: "Cup pong with a mind of its own",
     description:
       "CP3AI is an automated Cup Pong system that uses computer vision to detect successful shots and track the state of a game in real time. The system will automatically update scores and remaining cups while using LEDs to tell players which cups should be removed or how they should be rearranged. A web or mobile interface will allow players to view game information and interact with the system.",
-    image: "",
+    pdf: "/images/projects/26-27/CP3AI.pdf",
+    image: "/images/projects/26-27/CP3AI.png"
   },
     {
     title: "MakersMotion",
-    subtitle: "",
+    subtitle: "Feel every twist and drop",
     description:
       "MakersMotion is an interactive project centralized around a VR roller coaster simulation. The idea is to create an immersive ride experience using a motorized chair that has two degrees of freedom. This would be combined with a headset (via phone) that displays a VR video of a roller coaster that is synced to the motion of the chair.",
-    image: "",
+    pdf:"/images/projects/26-27/MakersMotion.pdf",
+    image: "/images/projects/26-27/MakersMotion.png"
   },
     {
     title: "soundtrack",
-    subtitle: "",
+    subtitle: "Make music with your hands",
     description:
       "A standalone wearable synthesizer that allows users to create and manipulate music through natural hand and finger movements. Inspired by the theremin, the project will use sensors embedded in a pair of gloves to capture hand orientation, movement, and finger positions, which will be processed and translated into musical parameters in real time. The goal is to create an expressive electronic instrument that allows someone with little or no traditional musical training to create music through movement.",
-    image: "",
+    pdf: "/images/projects/26-27/soundtrack.pdf",
+    image: "/images/projects/26-27/soundtrack.png"
   },
     {
     title: "ABC",
-    subtitle: "",
+    subtitle: "A chessboard that makes its own moves",
     description:
-      "A Better Chessboard (ABC) is an interactive physical chessboard that combines traditional chess with software, electronics, and mechanical systems to create a more personalized and engaging way to play. The board will be able to detect player\ moves and automatically move its own pieces, while LEDs and a companion app provide guidance, game information, and alternate game modes. ABC will also recognize players and remember their games, statistics, and playing habits, creating a chessboard that becomes more personalized the more you use it.",
-    image: "",
+      "A Better Chessboard (ABC) is an interactive physical chessboard that combines traditional chess with software, electronics, and mechanical systems to create a more personalized and engaging way to play. The board will be able to detect player moves and automatically move its own pieces, while LEDs and a companion app provide guidance, game information, and alternate game modes. ABC will also recognize players and remember their games, statistics, and playing habits, creating a chessboard that becomes more personalized the more you use it.",
+    pdf: "/images/projects/26-27/ABC.pdf",
+    image: "/images/projects/26-27/ABC.png"
   },
     {
     title: "Trick or Treat",
-    subtitle: "",
+    subtitle: "A spooky twist on handing out candy",
     description:
       "An animatronic for Halloween which can dispense sweets out for each child, rather than having a bowl which can be stolen. It would have lots of visual effects like lights, smoke, audio.",
-    image: "",
+    pdf: "/images/projects/26-27/TrickorTreat.pdf",
+    image: "/images/projects/26-27/TrickorTreat.png"
   },
     {
     title: "Holo Bench",
-    subtitle: "",
+    subtitle: "Build with blocks you can’t touch",
     description:
       "My project is 3D simulated Lego-building experience where you grab, drag, rotate, and place virtual 3D blocks in mid-air using an EMG equipped glove combined with camera-based hand tracking.",
-    image: "",
+    pdf: "/images/projects/26-27/HoloBench.pdf",
+    image: "/images/projects/26-27/HoloBench.png"
   },
     {
     title: "PuckBot",
-    subtitle: "",
+    subtitle: "Take on the air hockey robot",
     description:
       "Assemble an air hockey table that uses a two-axis gantry to move its paddle and play against a human. I imagine a camera will track the puck and player in real time, while some form of control system will predict the puck’s motion and decide the robot’s response. I imagine the controller would be fine tuned with reinforcement learning to make the robot progressively better at defending and attacking",
-    image: "",
+    pdf: "/images/projects/26-27/PuckBot.pdf",
+    image: "/images/projects/26-27/PuckBot.png"
   },
 ]
+// junk file. all the imports you don't want to see!
+// const projects25_26 = [
+//     {
+//     title: "StarSabers",
+//     subtitle: "",
+//     description:
+//       "A set of realistic lightsabers with which we’ll develop a fight system capable ofrecognizing different movements and react to them. As an expansion, we’re building a game (like BeatSabers) where we could use the sabers as joysticks.",
+//     image: "",
+//   },
+//   {
+//     title: "Artemis",
+//     subtitle: "",
+//     description:
+//       "The project is an archery aiming assistant – it guides the user on exactly how to hit a perfect target. The user handles the bow and arrow like normal, and the system will tell them whether to pitch up/down, pivot left/right, or draw the arrow more.",
+//     image: "",
+//   },
+//     {
+//     title: "Puzzle Box",
+//     subtitle: "",
+//     description:
+//       "Puzzle box is an escape room in a box with physical puzzles which need to be manipulated in order to open compartments and reveal new sections of the box. Each puzzle solution will open compartments until players get to a prize at the end, as long as they finish before time runs out.",
+//     image: "",
+//   },
+//     {
+//     title: "CP3AI",
+//     subtitle: "",
+//     description:
+//       "CP3AI is an automated Cup Pong system that uses computer vision to detect successful shots and track the state of a game in real time. The system will automatically update scores and remaining cups while using LEDs to tell players which cups should be removed or how they should be rearranged. A web or mobile interface will allow players to view game information and interact with the system.",
+//     image: "",
+//   },
+//     {
+//     title: "MakersMotion",
+//     subtitle: "",
+//     description:
+//       "MakersMotion is an interactive project centralized around a VR roller coaster simulation. The idea is to create an immersive ride experience using a motorized chair that has two degrees of freedom. This would be combined with a headset (via phone) that displays a VR video of a roller coaster that is synced to the motion of the chair.",
+//     image: "",
+//   },
+//     {
+//     title: "soundtrack",
+//     subtitle: "",
+//     description:
+//       "A standalone wearable synthesizer that allows users to create and manipulate music through natural hand and finger movements. Inspired by the theremin, the project will use sensors embedded in a pair of gloves to capture hand orientation, movement, and finger positions, which will be processed and translated into musical parameters in real time. The goal is to create an expressive electronic instrument that allows someone with little or no traditional musical training to create music through movement.",
+//     image: "",
+//   },
+//     {
+//     title: "ABC",
+//     subtitle: "",
+//     description:
+//       "A Better Chessboard (ABC) is an interactive physical chessboard that combines traditional chess with software, electronics, and mechanical systems to create a more personalized and engaging way to play. The board will be able to detect player moves and automatically move its own pieces, while LEDs and a companion app provide guidance, game information, and alternate game modes. ABC will also recognize players and remember their games, statistics, and playing habits, creating a chessboard that becomes more personalized the more you use it.",
+//     image: "",
+//   },
+//     {
+//     title: "Trick or Treat",
+//     subtitle: "",
+//     description:
+//       "An animatronic for Halloween which can dispense sweets out for each child, rather than having a bowl which can be stolen. It would have lots of visual effects like lights, smoke, audio.",
+//     image: "",
+//   },
+//     {
+//     title: "Holo Bench",
+//     subtitle: "",
+//     description:
+//       "My project is 3D simulated Lego-building experience where you grab, drag, rotate, and place virtual 3D blocks in mid-air using an EMG equipped glove combined with camera-based hand tracking.",
+//     image: "",
+//   },
+//     {
+//     title: "PuckBot",
+//     subtitle: "",
+//     description:
+//       "Assemble an air hockey table that uses a two-axis gantry to move its paddle and play against a human. I imagine a camera will track the puck and player in real time, while some form of control system will predict the puck’s motion and decide the robot’s response. I imagine the controller would be fine tuned with reinforcement learning to make the robot progressively better at defending and attacking",
+//     image: "",
+//   },
+// ]
 const projects24_25 = [
   {
     title: "Dance Cam",

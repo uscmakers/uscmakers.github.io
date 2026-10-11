@@ -7,11 +7,22 @@ import logoCombined from "../images/makers_combined_logo.png";
 import logoCrestWhite from "../images/makers-crest-white.png";
 
 const projectYears = [
-  "2024-2025",
-  "2023-2024",
-  "2022-2023",
-  "2021-2022",
-  "2018-2021",
+  {
+    display: "2026-2027", 
+    link: "2026-2027"
+  },
+  {
+    display: "2024-2025",
+    link: "2024-2025",
+  },
+  {
+    display: "2021-2024",
+    link: "2023-2024"
+  },
+  {
+    display: "2018-2021",
+    link: "2020-2021"
+  },
 ];
 
 const Header = () => {
@@ -72,7 +83,7 @@ const Header = () => {
               </div>
 
               <ul className="nav-dropdown-menu">
-                <li>
+                {/* <li>
                   <Link
                     to="/projects"
                     className="nav-dropdown-link"
@@ -80,16 +91,16 @@ const Header = () => {
                   >
                     all projects
                   </Link>
-                </li>
+                </li> */}
 
                 {projectYears.map((year) => (
-                  <li key={year}>
+                  <li key={year.link}>
                     <Link
-                      to={`/projects?section=${year}`}
+                      to={`/projects?section=${year.link}`}
                       className="nav-dropdown-link"
                       onClick={closeDropdown}
                     >
-                      {year}
+                      {year.display}
                     </Link>
                   </li>
                 ))}
