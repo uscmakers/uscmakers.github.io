@@ -3,8 +3,7 @@ import { extname, join } from "node:path";
 import sharp from "sharp";
 
 const imageDirectories = [
-  "src/images/eboard",
-  "src/images/projectmanagers",
+  "public/images/projects/26-27",
 ];
 
 const supportedExtensions = new Set([
