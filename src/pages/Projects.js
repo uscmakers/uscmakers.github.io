@@ -6,6 +6,7 @@ import "../styles/projects.css";
 import { Link, useLocation } from "react-router-dom";
 
 import {
+  projects26_27,
   projects24_25,
   projects23_24,
   projects22_23,
@@ -62,6 +63,52 @@ const Projects = () => {
     <main>
       <Header />
       <div className="projects-container">
+
+        {/* 2026-2027 projects */}
+        {/* <h1 className="page-title" id="2026-2027">
+          2026-2027 projects
+        </h1>
+        {projects24_25.map((project, index) => (
+          <div className="project-section" key={index}>
+            <div className="project-content">
+              <div className="project-text">
+                <h2 className="project-title">{project.title}</h2>
+                <h3 className="project-subtitle">{project.subtitle}</h3>
+              </div>
+              <div className="project-image">
+                <div>
+                  <img src={project.image} alt={`${project.title}`} />
+                </div>
+                <div>
+                  <p className="project-description">{project.description}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))} */}
+
+        {/* 2025-2026 projects */}
+        {/* <h1 className="page-title" id="2025-2026">
+          2025-2026 projects
+        </h1>
+        {projects24_25.map((project, index) => (
+          <div className="project-section" key={index}>
+            <div className="project-content">
+              <div className="project-text">
+                <h2 className="project-title">{project.title}</h2>
+                <h3 className="project-subtitle">{project.subtitle}</h3>
+              </div>
+              <div className="project-image">
+                <div>
+                  <img src={project.image} alt={`${project.title}`} />
+                </div>
+                <div>
+                  <p className="project-description">{project.description}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))} */}
         {/* 2024-2025 projects */}
         <h1 className="page-title" id="2024-2025">
           2024-2025 projects

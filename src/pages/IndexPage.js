@@ -18,10 +18,10 @@ export const IndexPage = () => {
   }, []);
 
   return (
+    <>
+    {/* Header */}
+    <Header />
     <main>
-      {/* Header */}
-      <Header />
-
       {/* Landing Section */}
       <section className="video-section">
         <video
@@ -88,9 +88,11 @@ export const IndexPage = () => {
         <BackgroundCarousel />
       </section>
 
-      {/* Footer */}
-      <Footer />
+
     </main>
+    {/* Footer */}
+    <Footer />
+    </>
   );
 };
 

@@ -6,9 +6,9 @@ import "../styles/join.css";
 
 const Join = () => {
   return (
+  <>
+    <Header />
     <main>
-      <Header />
-
       {/* Header Section */}
       <section className="join-header">
         <div>
@@ -59,8 +59,11 @@ const Join = () => {
         </div>
       </section>
 
-      <Footer />
+
     </main>
+    <Footer />
+    </>
+    
   );
 };
 

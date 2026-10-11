@@ -12,9 +12,11 @@ import TypingEffect from "../components/TypingEffect";
 
 const About = () => {
   return (
+    
+    <>
+    <Header />
     <main>
-      {/* Header */}
-      <Header />
+
 
       {/* Landing Section */}
       <div className="about-landing-container">
@@ -138,10 +140,10 @@ const About = () => {
           </p>
         </div>
       </section>
-
-      {/* Footer */}
-      <Footer />
     </main>
+    {/* Footer */}
+    <Footer />
+    </>
   );
 };
 
